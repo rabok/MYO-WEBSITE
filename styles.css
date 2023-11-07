@@ -27,14 +27,13 @@ body {
 }
 
 .support-button {
-    background-color: blue; /* Change to your preferred blue color */
-    color: white; /* Text color */
-    border-radius: 100px; /* Adjust the value to change the roundness */
-    padding: 10px 20px; /* Adjust the padding to your preference */
+    background-color: #EBA340;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
     /* Any other styles you want for the button */
+    float: right; /* Align the button to the right */
 }
-
-
 
  /* hero section */
  /* Define hero section styles */
@@ -43,8 +42,8 @@ body {
 }
 
 .video-img {
-    background-color: orange;
-    box-shadow: orange;
+    background-color: #EBA340;
+    box-shadow: #EBA340;
     width: 100%; /* Adjust the width if needed */
     height: auto;
 }
@@ -55,7 +54,7 @@ body {
 }
 
 .blue-text {
-    color: blue;
+    color: #3D66C9 ;
     font-size: 36px; /* Adjust the size as needed */
 }
 
@@ -64,13 +63,15 @@ body {
 }
 
 .btn-primary {
-    background-color: blue; /* Change to your preferred blue color */
+    background-color: #3D66C9;
     color: white;
     padding: 10px 20px; /* Adjust padding as needed */
     text-decoration: none;
+    float: right; /* Align the button to the right */
 }
+
 .impact-section {
-    background-color: blue; /* Change to your preferred blue color */
+    background-color: #EBA340 ; /* Change to your preferred blue color */
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
