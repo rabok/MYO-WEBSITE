@@ -1,0 +1,21 @@
+/* styles.css */
+
+body {
+    background-color: transparent;
+    color: #fff; /* Text color - can be changed to any preferred color */
+}
+
+/* Custom styles for the logo */
+.logo {
+    max-width: 100px; /* Define the maximum width for the logo */
+}
+
+/* Custom style for the navigation bar */
+.navbar {
+    background-color: transparent;
+}
+
+/* Styling the navigation links */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; /* Text color for the navigation links */
+}
