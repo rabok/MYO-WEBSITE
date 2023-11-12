@@ -150,3 +150,89 @@ body {
     padding: 10px 20px;
     text-decoration: none;
 }
+
+/* Style for the Join Us section */
+.join-us-section {
+    background-color: #EBA340; /* Secondary color as background for the entire section */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+}
+
+/* Style for the section title */
+.join-us-section h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    text-align: center;
+    color: #3D66C9; /* Font color of the title is primary */
+}
+
+/* Style for the primary background color for columns */
+.primary-bg {
+    background-color: transparent; /* Make the column background transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #FFF; /* Text color for better contrast */
+    text-align: center;
+    margin-bottom: 20px; /* Add space between columns and buttons */
+}
+
+/* Style for the image container with primary background */
+.image-container {
+    background-color: transparent; /* Primary color as the background for images */
+    padding: 20px; /* Add padding as needed */
+    text-align: center;
+    background-position: left top; /* Set background position to left and top */
+    background-size: 100% 100%; /* Ensure the background covers the entire container */
+    border-radius: 0 50px 50px 0; /* Apply border radius to the left side */
+    overflow: hidden; /* Hide overflow content (make it invisible to bottom and right) */
+}
+
+/* Style for the buttons below each column */
+.image-container button {
+    background-color: #3D66C9; /* Primary color as the button background */
+    color: #FFF; /* Text color for better contrast */
+    margin-top: 10px; /* Add space between the image and the button */
+}
+
+/* Style for the Success Stories section */
+.success-stories-section {
+    background-color: #FFF; /* Change to white background */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+    text-align: center; /* Center-align the content */
+}
+
+/* Style for the section title */
+.success-stories-section h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #3D66C9; /* Font color of the title is primary */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Style for the container of the two columns */
+.success-stories-content {
+    display: flex; /* Use flexbox to create a row layout */
+    justify-content: space-between; /* Space out the two columns */
+}
+
+/* Style for the column with the circular-framed image */
+.image-column {
+    flex: 0 0 48%; /* Take up 48% of the available space, leaving room for the other column */
+    background-color: transparent; /* Set background of column one to transparent */
+}
+
+/* Style for the circular-framed image */
+.image-container.success-stories {
+    border-radius: 50%; /* Make the frame circular */
+    overflow: hidden; /* Hide overflow for a clean circle */
+}
+
+/* Style for the column with three paragraphs */
+.text-column {
+    flex: 0 0 48%; /* Take up 48% of the available space, leaving room for the other column */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for paragraphs in the text column */
+.text-column p {
+    margin-bottom: 15px; /* Add space between paragraphs */
+    color: #000; /* Set text color to black */
+}
