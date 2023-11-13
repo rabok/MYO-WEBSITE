@@ -287,3 +287,20 @@ img {
         opacity: 1;
     }
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: #FFF; /* Change to white background or your preferred color */
+    padding: 20px;
+    color: #3D66C9; /* Text color is primary */
+    text-align: center;
+}
+
+.our-story-section h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add space below the title */
+}
