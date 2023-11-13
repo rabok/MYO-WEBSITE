@@ -236,3 +236,54 @@ body {
     margin-bottom: 15px; /* Add space between paragraphs */
     color: #000; /* Set text color to black */
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Our Partners and Network Section */
+.partners-section {
+    background-color: #3D66C9;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Slideshow Section */
+.slideshow-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.slideshow-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation for fading between slides */
+.fade {
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
