@@ -4,6 +4,16 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color: #fff; /* Text color - can be changed to any preferred color */
+    text-align: justify;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #3D66C9;
+    color: #fff; /* Text color on hover */
 }
 
 /* Custom styles for the logo */
@@ -287,10 +297,6 @@ img {
         opacity: 1;
     }
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 /* Our Story Section */
 .our-story-section {
@@ -303,4 +309,287 @@ body {
 .our-story-section h1 {
     font-size: 36px; /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Two Columns in One Row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center content vertically */
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+/* Image and Text Columns */
+.column {
+    flex: 0 0 48%; /* Adjust the size of both image and text columns */
+    margin-bottom: 10px; /* Add space between columns */
+    text-align: left; /* Left-align text in both columns */
+}
+
+/* Style for the image in the column */
+.column img {
+    width: 100%; /* Make the image fill the container */
+}
+
+/* Style for the text in the column */
+.column p {
+    color: #000; /* Set text color to black */
+    margin-bottom: 15px; /* Add space below the paragraph */
+}
+
+/* Style for the additional paragraph and button */
+.additional-paragraph {
+    text-align: right;
+    color: #000; /* Set text color to black */
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/* Style for the Our Team button */
+.our-team-button {
+    background-color: #3D66C9;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add space between the paragraph and the button */
+    transition: background-color 0.3s ease;
+}
+
+.our-team-button:hover {
+    background-color: #EBA340;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #3D66C9; /* Primary color as the background */
+    color: #FFF; /* Text color is white for better contrast */
+    text-align: left;
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Container for the widgets */
+.widgets-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping to new line if necessary */
+}
+
+/* Style for each widget */
+.widget {
+    width: 20%; /* Adjust the width as needed */
+    margin-bottom: 20px; /* Add space between widgets */
+}
+
+/* Style for the news bar */
+.news-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Add space above the bar */
+}
+
+/* Style for the input in the news bar */
+.news-bar input {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Style for the subscribe button in the news bar */
+.news-bar button {
+    background-color: #EBA340;
+    color: #FFF;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add space above the social icons */
+}
+
+.social-icon {
+    margin: 0 8px; /* Adjust spacing between social icons */
+}
+
+/* Style for the social media icon images */
+.social-icon img {
+    width: 30px; /* Adjust the size of the social media icons */
+    height: auto;
+    filter: invert(1); /* Invert the color to blue */
+}
+
+/* Style for the centered section */
+.centered-section {
+    text-align: center; /* Center-align the content within the section */
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative; /* Set position to relative for absolute positioning of the title */
+    display: inline-block; /* Display as inline-block for horizontal centering */
+}
+
+/* Style for the image */
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    display: block; /* Remove extra spacing below the image */
+}
+
+/* Style for the title */
+/* Style for the title */
+.image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3D66C9; /* Primary color for the title */
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the centered section */
+.centered-section {
+    text-align: center; /* Center-align the content within the section */
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative;
+    text-align: center; /* Center-align content within the container */
+}
+
+/* Style for the image */
+.image-container img {
+    width: 100%; /* Make the image cover the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block;
+}
+
+/* Style for the title */
+.image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3D66C9; /* Primary color for the title */
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the paragraph section */
+.paragraph-section {
+    padding: 20px; /* Add padding as needed */
+    text-align: left; /* Align the text to the left */
+}
+
+/* Style for the paragraph container */
+.paragraph-container {
+    width: 100%; /* Make the container occupy the full width of the screen */
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box; /* Include padding in the total width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for paragraphs */
+.paragraph-container p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    color: #000; /* Set text color to black */
+    text-align: left; /* Justify the text to occupy the full width */
+}
+
+/* Style for Our Mission section */
+.our-mission-section,
+.our-vision-section,
+.core-values-section {
+    text-align: center; /* Center-align the content within the section */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Style for the mission, vision, and core values containers */
+.mission-container,
+.vision-container,
+.core-values-container {
+    max-width: 800px; /* Adjust the max-width of the container as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the title in the Our Mission, Our Vision, and Our Core Values sections */
+.our-mission-section h2,
+.our-vision-section h2,
+.core-values-section h2 {
+    color: #3D66C9; /* Primary color for the title */
+}
+
+/* Style for the centered paragraph in the Our Mission, Our Vision, and Our Core Values sections */
+.centered-paragraph {
+    text-align: center;
+    color: #3D66C9; /* Primary color for the paragraph text */
+}
+
+/* Style for the columns in the Our Core Values section */
+.core-values-container .row {
+    display: flex; /* Use flexbox for the columns */
+    justify-content: center; /* Center-align columns horizontally */
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+}
+
+/* Style for the heart icon container */
+.heart-icon {
+    width: 30px; /* Set width of the heart icon container */
+    height: 30px; /* Set height of the heart icon container */
+    position: relative; /* Position the icon container relative to its parent */
+    margin: 0 auto 10px; /* Add space below the heart icon container */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Style for the heart icon ::before pseudo-element */
+.heart-icon::before,
+.heart-icon::after {
+    content: ""; /* Empty content for pseudo-elements */
+    position: absolute; /* Position the pseudo-elements absolutely */
+    top: 0; /* Align pseudo-elements at the top of the heart icon container */
+    width: 15px; /* Set width of the pseudo-elements */
+    height: 25px; /* Set height of the pseudo-elements */
+    background-color: #3D66C9; /* Primary color for the heart shape */
+    border-radius: 50%; /* Create a circular shape */
+}
+
+/* Position the left pseudo-element on the left side */
+.heart-icon::before {
+    left: 0;
+    transform: rotate(-45deg); /* Rotate the pseudo-elements to create the heart shape */
+}
+
+/* Position the right pseudo-element on the right side */
+.heart-icon::after {
+    left: 15px;
+    transform: rotate(45deg); /* Rotate the pseudo-elements to create the heart shape */
+}
+
+
+/* Style for the columns in the Our Core Values section */
+.core-values-container .row {
+    display: flex; /* Use flexbox for the columns */
+    justify-content: center; /* Center-align columns horizontally */
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+}
+
+/* Style for each column with heart shape and paragraph in the Our Core Values section */
+.like-column {
+    flex-basis: calc(33.33% - 20px); /* Adjust column width with space between */
+    box-sizing: border-box; /* Include padding in the total width */
+    margin-bottom: 20px; /* Add space between rows */
+    text-align: center; /* Center-align content within the column */
+}
+
+/* Style for the paragraphs in the Our Core Values section */
+.core-values-container p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    color: #000; /* Set text color to black */
+    text-align: center; /* Center-align the text within the column */
 }
