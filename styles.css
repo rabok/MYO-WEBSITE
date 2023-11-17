@@ -593,3 +593,293 @@ img {
     color: #000; /* Set text color to black */
     text-align: center; /* Center-align the text within the column */
 }
+
+/* Style for the Our Programs section */
+.our-programs-section {
+    background-color: transparent; /* Secondary color as background for the entire section */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the Our Programs container */
+.our-programs-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+/* Style for the Our Programs section */
+.our-programs-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the Our Programs container */
+.our-programs-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for paragraphs in Our Programs */
+.our-programs-container p {
+    color: #000; /* Set text color to black */
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+/* Style for the Education section */
+.education-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Text color is black */
+}
+
+/* Style for the Education container */
+.education-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Education section title */
+.education-container h2 {
+    color: #A5C98E; /* Set text color to #A5C98E */
+    text-align: left; /* Align the title to the left */
+}
+
+/* Style for rows and columns */
+.row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.col-md-6 {
+    width: 50%; /* Set width of columns to 50% for two columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Style for the heading in each column */
+.col-md-6 h3 {
+    color: #A5C98E; /* Set text color of the heading to #A5C98E */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style for the Personality section */
+.personality-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+}
+
+/* Style for the Personality container */
+.personality-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Personality section title */
+.personality-container h2 {
+    color: #A4C5E3; /* Set text color to #A4C5E3 */
+    text-align: left; /* Align the title to the left */
+}
+
+/* Style for rows and columns in Personality section */
+.personality-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.personality-container .col-md-6 {
+    width: 50%; /* Set width of columns to 50% for two columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Style for the paragraph in the second column */
+.personality-container .col-md-6 p {
+    color: #000; /* Set text color of the paragraph to black */
+}
+
+/* Style for the Learn More button */
+.personality-container .learn-more-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: right; /* Align the button to the right */
+    display: block; /* Make the button a block element to control its width */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Style for the Talents section */
+.talents-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Text color is primary */
+}
+
+/* Style for the Talents container */
+.talents-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Talents section title */
+.talents-container h2 {
+    color: #d9d9d9; /* Set text color to #d9d9d9 */
+    text-align: left; /* Align the title to the left */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for rows and columns in Talents section */
+.talents-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.talents-container .col-md-6 {
+    width: 50%; /* Set width of columns to 50% for two columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Style for the heading in the second column */
+.talents-container .col-md-6 h3 {
+    color: #d9d9d9; /* Set text color of the heading to #d9d9d9 */
+}
+
+/* Style for the Community section */
+.community-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Text color is primary */
+}
+
+/* Style for the Community container */
+.community-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Community section title */
+.community-container h2 {
+    color: #ee9c64; /* Set text color to #ee9c64 */
+    text-align: left; /* Align the title to the left */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the New Section */
+.new-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+}
+
+/* Style for the New Section container */
+.new-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the centered paragraph */
+.new-container .centered-paragraph {
+    text-align: center; /* Align the paragraph to the center */
+    margin-bottom: 20px; /* Add space below the centered paragraph */
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the primary color button */
+.new-container .primary-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+    display: block; /* Make the button a block element to control its width */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Style for rows and columns in New Section */
+.new-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.new-container .col-md-4 {
+    width: 33.33%; /* Set width of columns to approximately 33.33% for three columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.new-container .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the Mentorship Program section */
+.mentorship-section {
+    text-align: center; /* Align the content at the center */
+    color: #3D66C9; /* Text color is primary */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Style for paragraphs in Mentorship Program section */
+.mentorship-section p {
+    color: #000; /* Set text color of the paragraphs to black */
+    text-align: left; /* Align paragraphs to the left */
+}
+
+/* Style for rows and columns in Mentorship Program section */
+.mentorship-section .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.mentorship-section .col-md-6 {
+    width: 50%; /* Set width of columns to 50% for two columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Style for the heading in each column */
+.mentorship-section h3 {
+    color: #000; /* Set text color of the heading to black */
+    text-align: left; /* Align the heading to the left */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.mentorship-section .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the New Section */
+.new-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Text color is black */
+    text-align: center; /* Align the content at the center */
+    height: 100vh; /* Set the section height to the full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally and vertically */
+}
+
+/* Style for the New Section container */
+.new-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the centered paragraph */
+.centered-paragraph {
+    text-align: center; /* Align the paragraph to the center */
+    margin-bottom: 20px; /* Add space below the centered paragraph */
+}
+
+/* Style for the primary color button */
+.primary-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+    display: inline-block; /* Make the button an inline-block element */
+    margin-top: 10px; /* Add space above the button */
+}
