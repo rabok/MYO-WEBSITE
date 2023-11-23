@@ -883,3 +883,134 @@ img {
     display: inline-block; /* Make the button an inline-block element */
     margin-top: 10px; /* Add space above the button */
 }
+
+/* Style for the Our Impact Section */
+.our-impact-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+    text-align: center; /* Align the content at the center */
+}
+
+/* Style for the Our Impact Container */
+.our-impact-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Centered Title */
+.centered-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #3D66C9; /* Text color is primary */
+    margin-top: 20px; /* Add space at the top */
+}
+
+/* Style for the Two Paragraphs Section */
+.two-paragraphs-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Style for the Two Paragraphs Container */
+.two-paragraphs-container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for Black Text */
+.black-text {
+    color: #000; /* Set text color to black */
+    margin-bottom: 20px; /* Add space between paragraphs if needed */
+}
+
+/* Style for the new section with primary color background */
+.four-columns-section {
+    background-color: #3D66C9; /* Set primary color as background */
+    padding: 20px; /* Add padding as needed */
+    color: #FFF; /* Text color is white */
+}
+
+/* Style for rows and columns */
+.four-columns-section .row {
+    display: flex; /* Use flexbox for a flexible layout */
+    justify-content: space-between; /* Space columns evenly */
+}
+
+.four-columns-section .col-md-3 {
+    width: 23%; /* Adjust the width of columns as needed */
+}
+
+/* Style for column content */
+.four-columns-section p {
+    text-align: center; /* Center the content within each column */
+}
+/* Style for rows and columns */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-md-3 {
+    width: 22%; /* Adjust width as needed */
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Style for icons */
+i {
+    color: #fff; /* Set icon color */
+    background-color: #3D66C9; /* Set background color for icons */
+    padding: 10px;
+    border-radius: 50%; /* Make the icons circular */
+}
+
+/* Style for the new section */
+.new-section {
+    background-color: transparent; /* Set background color to transparent or any desired color */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the container within the section */
+.new-section .container {
+    max-width: 800px; /* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the centered paragraph */
+.new-section p {
+    text-align: left; /* Align the paragraph to the left */
+    margin-bottom: 20px; /* Add space below the paragraph */
+    color: #000; /* Set text color to black */
+}
+
+/* Align content to the top of the section */
+.new-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Style for rows and columns */
+.new-section .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.new-section .col-md-1 {
+    width: 15%; /* Adjust width as needed */
+    margin: 0; /* Remove margin */
+}
+
+/* Style for images within columns */
+.new-section img {
+    width: 90%; /* Adjust the width of the images */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0; /* Remove margin around the images */
+}
+
+
