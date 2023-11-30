@@ -1013,4 +1013,19 @@ i {
     margin: 0; /* Remove margin around the images */
 }
 
+.concept-section {
+    padding: 20px;
+}
+
+.centered-section {
+    text-align: center;
+}
+
+.primary-color {
+    color: #3D66C9;
+}
+
+.centered-section p {
+    color: #000; /* Text color set to black */
+}
 
