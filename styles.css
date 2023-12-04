@@ -1079,3 +1079,47 @@ i {
     width: 100%; /* Make the image span the entire width of the container */
     height: auto;
 }
+
+/* First Section Styles */
+.first-section {
+    background-image: url('assets/images/vision.png');
+    /* Add other background styles as needed */
+}
+
+.text-paragraph {
+    color: #EBA340;
+    /* Add other styles for the paragraph */
+}
+/* Add your existing styles here */
+
+/* Form Styles */
+.donation-form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.form-header {
+    font-weight: bold;
+}
+
+.form-text {
+    margin-top: 20px;
+}
+
+.select-campaign select,
+.amount-options input[type="text"],
+.preset-amounts label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.preset-amounts label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add additional styles as needed */
