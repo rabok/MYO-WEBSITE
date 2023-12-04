@@ -1013,19 +1013,69 @@ i {
     margin: 0; /* Remove margin around the images */
 }
 
-.concept-section {
-    padding: 20px;
+/* Style for the Our Concept section */
+.our-concept-section {
+    text-align: center; /* Align the content at the center */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
 }
 
-.centered-section {
+/* Style for the paragraph in Our Concept section */
+.our-concept-section p {
+    text-align: left; /* Align the paragraph to the left */
+    color: black; /* Text color for the paragraph */
+}
+
+/* Style for the Four Columns Section */
+.four-columns-section {
     text-align: center;
-}
-
-.primary-color {
+    padding: 20px;
     color: #3D66C9;
+    background-color: transparent; /* Set background color to transparent */
 }
 
-.centered-section p {
-    color: #000; /* Text color set to black */
+/* Style for rows and columns */
+.four-columns-section .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around;
 }
 
+.four-columns-section .col-md-6 {
+    width: 48%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Style for the Translucent Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(61, 102, 201, 0.7); /* Set the color and opacity of the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+}
+
+/* Style for the Title in the Overlay */
+.overlay h3 {
+    color: #FFF; /* Set text color to white */
+}
+
+/* Style for the Paragraph in the Overlay */
+.overlay p {
+    color: #FFF; /* Set text color to white */
+}
+
+/* Style for the Circular Image */
+.center-image img {
+    border-radius: 50%;
+    width: 100%; /* Make the image span the entire width of the container */
+    height: auto;
+}
