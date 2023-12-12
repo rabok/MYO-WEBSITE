@@ -1026,58 +1026,23 @@ i {
     color: black; /* Text color for the paragraph */
 }
 
-/* Style for the Four Columns Section */
-.four-columns-section {
-    text-align: center;
-    padding: 20px;
-    color: #3D66C9;
-    background-color: transparent; /* Set background color to transparent */
+/* Add your existing styles here */
+
+/* Concept Section Styles */
+.concept-section {
+    padding: 50px 0;
 }
 
-/* Style for rows and columns */
-.four-columns-section .row {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-around;
-}
-
-.four-columns-section .col-md-6 {
-    width: 48%; /* Adjust width as needed */
-    margin-bottom: 20px;
-    position: relative;
-}
-
-/* Style for the Translucent Overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(61, 102, 201, 0.7); /* Set the color and opacity of the overlay */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px; /* Add border radius for a rounded appearance */
-}
-
-/* Style for the Title in the Overlay */
-.overlay h3 {
-    color: #FFF; /* Set text color to white */
-}
-
-/* Style for the Paragraph in the Overlay */
-.overlay p {
-    color: #FFF; /* Set text color to white */
-}
-
-/* Style for the Circular Image */
-.center-image img {
-    border-radius: 50%;
-    width: 100%; /* Make the image span the entire width of the container */
+.section-image {
+    width: 100%; /* Adjust the width if needed */
     height: auto;
+    margin-bottom: 20px;
+}
+
+.section-paragraph {
+    font-size: 18px; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* First Section Styles */
@@ -1120,6 +1085,46 @@ i {
 .preset-amounts label {
     display: inline-block;
     margin-right: 10px;
+}
+
+/* Add your existing styles here */
+
+/* Mentor Introduction Section Styles */
+.mentor-intro {
+    text-align: left; /* Updated to left-align text */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mentorship-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.image-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Set text color to white */
+}
+
+.image-paragraph {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
 }
 
 /* Add additional styles as needed */
