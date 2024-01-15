@@ -1126,5 +1126,61 @@ i {
     color: black;
     margin-bottom: 20px;
 }
+ 
+/*become a partner*/
 
-/* Add additional styles as needed */
+/* General styling for header */
+header {
+    background-color: #ffffff; /* Set the background color to white */
+    color: #3D66C9; /* Set the text color to primary color */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling specifically for the h1 element within the header */
+header h1 {
+    font-size: 2em; /* Set the font size (adjust as needed) */
+    margin-bottom: 10px; /* Add margin below the title */
+}
+
+
+/* Styling for the main content section */
+.content-section {
+    color: #000000; /* Set text color to black */
+    margin-top: 20px; /* Add margin at the top (adjust as needed) */
+}
+
+/* Additional styling for paragraphs */
+.content-section p {
+    margin-bottom: 15px; /* Add margin below paragraphs (adjust as needed) */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+
+/* Styling for rows and columns */
+.row {
+    display: flex;
+    margin-bottom: 20px; /* Add margin between rows (adjust as needed) */
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Background color specifically for the column with image */
+.column img-container {
+    background-color: #3D66C9; /* Set the background color to primary color */
+}
+
+/* Additional styling for images */
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for titles */
+.column h3 {
+    color: #000000; /* Set title color to black */
+    margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
+}
