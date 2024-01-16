@@ -35,15 +35,18 @@
             </button>
 
             <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto custom-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto custom-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">About us</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                <a class="dropdown-item" href="#">Our Vision and Values</a>
+                                <a class="dropdown-item" href="ourvisionandvalues.html">Our Vision and Values</a>
                                 <a class="dropdown-item" href="ourstory.html">Our Story</a>
-                                <a class="dropdown-item" href="#">Our Team</a>
+                                <a class="dropdown-item" href="ourteam.html">Our Team</a>
                             </div>
                         </div>
                     </li>
@@ -51,8 +54,8 @@
                         <a class="nav-link" href="#">Our Programs</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                <a class="dropdown-item" href="#">Our Concept</a>
-                                <a class="dropdown-item" href="#">Our Programs</a>
+                                <a class="dropdown-item" href="ourconcept.html">Our Concept</a>
+                                <a class="dropdown-item" href="ourprograms.html">Our Programs</a>
                             </div>
                         </div>
                     </li>
@@ -60,8 +63,8 @@
                         <a class="nav-link" href="#">Our Impact</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                <a class="dropdown-item" href="#">Our Impact</a>
-                                <a class="dropdown-item" href="#">Our Success Stories</a>
+                                <a class="dropdown-item" href="ourimpact.html">Our Impact</a>
+                                <a class="dropdown-item" href="oursuccessstories.html">Our Success Stories</a>
                             </div>
                         </div>
                     </li>
@@ -69,11 +72,11 @@
                         <a class="nav-link" href="#">Get nvolved</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                <a class="dropdown-item" href="#">Sponsor a Child</a>
-                                <a class="dropdown-item" href="#">Become a Distant Parent</a>
-                                <a class="dropdown-item" href="#">Become a Partner</a>
-                                <a class="dropdown-item" href="#">Become a Mentor</a>
-                                <a class="dropdown-item" href="#">Become a Volunteer</a>
+                                <a class="dropdown-item" href="sponsorachild.html">Sponsor a Child</a>
+                                <a class="dropdown-item" href="becomeadistantparent.html">Become a Distant Parent</a>
+                                <a class="dropdown-item" href="becomeapartner.html">Become a Partner</a>
+                                <a class="dropdown-item" href="becomeamentor.html">Become a Mentor</a>
+                                <a class="dropdown-item" href="becomeavolunteer.html">Become a Volunteer</a>
                             </div>
                         </div>
                     </li>
@@ -97,6 +100,7 @@
 
 <!-- Main Content Section -->
 <main>
+
     <section class="content-section">
         <p>As we continue to make a lasting impact, we recognize the invaluable role that proffesional 
             partner organizations play in our journey. If you are an organization looking to create a meaningful 
@@ -165,40 +169,40 @@
     <div class="slideshow-container">
         <div class="mySlides">
             <!-- Partner 1 Content -->
-            <img src="assets/images/partner1.png" alt="Partner 1">
+            <img src="assets/images/partner1.png" alt="Partner 1" class="logo-image">
         </div>
 
         <div class="mySlides">
             <!-- Partner 2 Content -->
-            <img src="assets/images/partner2.svg" alt="Partner 2">
+            <img src="assets/images/partner2.svg" alt="Partner 2" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner3.svg" alt="Partner 3">
+            <!-- Partner 4 Content -->
+            <img src="assets/images/partner3.svg" alt="Partner 3" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner4.png" alt="Partner 4">
+            <!-- Partner 4 Content -->
+            <img src="assets/images/partner4.png" alt="Partner 4" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner5.png" alt="Partner 5">
+            <!-- Partner 5 Content -->
+            <img src="assets/images/partner5.png" alt="Partner 5" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner6.jpeg" alt="Partner 6">
+            <!-- Partner 6 Content -->
+            <img src="assets/images/partner6.jpeg" alt="Partner 6" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner7.png" alt="Partner 7">
+            <!-- Partner 7 Content -->
+            <img src="assets/images/partner7.png" alt="Partner 7" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner8.jpg" alt="Partner 8">
+            <!-- Partner 8 Content -->
+            <img src="assets/images/partner8.jpg" alt="Partner 8" class="logo-image">
         </div>
         <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner 9.png" alt="Partner 9">
+            <!-- Partner 9 Content -->
+            <img src="assets/images/partner 9.png" alt="Partner 9" class="logo-image">
         </div>
 
 
@@ -206,9 +210,131 @@
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
             <!-- Add more dots for additional slides -->
         </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+        
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+        
+                slideIndex++;
+        
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+        
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+        
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+        
+                setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+            }
+        </script>
+        
     </div>
+    <!-- Join Our Network Form Section -->
+<section class="join-network-section">
+    <h2>Join Our Network</h2>
+    <p>Fill out the form below to join our network and become a part of our community.</p>
+
+  <!-- Form -->
+<form action="#" method="post">
+<!-- First Row -->
+<div class="form-row">
+    <div class="form-field">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div class="form-field">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
+</div>
+
+<!-- Second Row -->
+<div class="form-row">
+    <div class="form-field">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+    </div>
+
+    <div class="form-field">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+    </div>
+</div>
+
+<!-- Third Row -->
+<div class="form-row">
+    <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+</div>
+
+<!-- Fourth Row -->
+<div class="form-row">
+    <div class="form-field">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+</div>
+
+<!-- Fifth Row -->
+<div class="form-row">
+    <div class="form-field">
+        <label>What opportunities are you interested in?</label>
+        <div class="opportunity-buttons">
+            <label>
+                <input type="radio" name="opportunities" value="volunteer"> Volunteer
+            </label>
+            <label>
+                <input type="radio" name="opportunities" value="mentor"> Mentor
+            </label>
+            <label>
+                <input type="radio" name="opportunities" value="distanceParent"> Distance Parent
+            </label>
+            <label>
+                <input type="radio" name="opportunities" value="internship"> Internship
+            </label>
+            <label>
+                <input type="radio" name="opportunities" value="partner"> Partner with us
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- Submit Button -->
+<div class="form-row">
+    <div class="form-field">
+        <button type="submit" style="background-color: #3D66C9; color: #ffffff;">Submit</button>
+    </div>
+</div>
+
+</form>
+
+</section>
+
+
 </section>
 
 
@@ -217,7 +343,6 @@
     </section>
     
 </main>
-
 
 
 <!-- Footer Section -->

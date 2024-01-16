@@ -1,10 +1,14 @@
 /* styles.css */
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
-    color: #fff; /* Text color - can be changed to any preferred color */
+    color: #fff;
     text-align: justify;
+}
+
+/* Apply margin to the entire body */
+body {
+    margin: 0 40px;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -1205,23 +1209,91 @@ header h1 {
     color: #000000; /* Set text color to black */
 }
 
-/* Styling for the slideshow */
+
+/* Styling for the slideshow container */
+.slideshow-container {
+    width: 600px; /* Set the total width to accommodate three partners */
+    white-space: nowrap; /* Prevent line break for inline-block elements */
+    overflow: hidden;
+}
+
+/* Styling for slides */
 .mySlides {
-    display: none;
+    display: inline-block; /* Display slides inline */
+    width: calc(200px + 10px); /* Set the fixed width for each slide plus margin-right */
+    animation: slide 5s infinite; /* Change slide duration to 5 seconds */
+    margin-right: 10px; /* Adjust margin between slides as needed */
 }
 
-/* Styling for navigation dots */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #888;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+/* Styling for logo images */
+.logo-image {
+    width: 100%; /* Ensure the image fills the slide */
+    height: auto; /* Maintain the aspect ratio */
 }
 
-/* Set the color for active dot */
-.active {
+@keyframes slide {
+    0% {
+        transform: translateX(calc(210px * 3)); /* Start from the right, considering 3 partners and margin */
+    }
+    100% {
+        transform: translateX(-210px); /* End at the left, considering 1 partner width and margin */
+    }
+}
+
+/* Add styling for the Join Our Network section */
+.join-network-section {
+    padding: 20px;
     background-color: transparent;
+    color: #000000;
+    text-align: center; /* Align text to the left */
+}
+
+.join-network-section h2 {
+    color: #000000;
+    text-align: center; /* Align heading to the center */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+    border: 2px solid #3D66C9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-field {
+    width: 48%;
+}
+
+/* Opportunity buttons styling */
+.opportunity-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opportunity-buttons label {
+    display: block;
+    text-align: left; /* Align radio buttons to the left */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #3D66C9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
