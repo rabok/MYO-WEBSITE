@@ -1184,3 +1184,39 @@ header h1 {
     color: #000000; /* Set title color to black */
     margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
 }
+
+/* Styling for the Our Partners section */
+.partners-section {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Styling for the title in the Our Partners section */
+.partners-section h2 {
+    color: #000000; /* Set title color to black */
+    margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
+}
+
+/* Styling for the centered paragraph */
+.centered-paragraph {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin below the paragraph (adjust as needed) */
+    color: #000000; /* Set text color to black */
+}
+
+/* Styling for the slideshow */
+.mySlides {
+    display: none;
+}
+
+/* Styling for navigation dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
