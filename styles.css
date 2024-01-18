@@ -43,258 +43,338 @@ body {
     float: right; /* Align the button to the right */
 }
 
- /* hero section */
- /* Define hero section styles */
+/* Resetting some default browser styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container styles to provide equal margins */
+.container {
+    margin-left: auto; /* Center the container on the page */
+    margin-right: auto; /* Center the container on the page */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Hero section styles */
 .hero {
     padding: 50px 0;
 }
 
+/* Video display styles */
 .video-img {
     background-color: #EBA340;
     box-shadow: #EBA340;
-    width: 100%; /* Adjust the width if needed */
+    width: 100%;
     height: auto;
 }
 
+/* Hero text styles */
 .hero-text {
     text-align: left;
     color: black;
 }
 
+/* Blue text styles */
 .blue-text {
-    color: #3D66C9 ;
-    font-size: 36px; /* Adjust the size as needed */
+    color: #3D66C9;
+    font-size: 36px;
 }
 
+/* Intro text styles */
 .intro-text {
-    font-size: 18px; /* Adjust the size as needed */
+    font-size: 18px;
 }
 
+/* Primary button styles */
 .btn-primary {
     background-color: #3D66C9;
     color: white;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 20px;
     text-decoration: none;
-    float: right; /* Align the button to the right */
+    float: right;
 }
-
+/* Updated styles for the impact section */
 .impact-section {
-    background-color: #EBA340 ; /* Change to your preferred blue color */
+    background-color: #EBA340;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+/* Impact content styles */
 .impact-content {
     text-align: center;
 }
 
+/* Impact stats styles */
 .impact-stats {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Updated to allow wrapping on smaller screens */
 }
 
+/* Statistic styles */
 .statistic {
     text-align: center;
-    margin: 0 20px; /* Adjust the margin as needed */
+    margin: 0 20px;
     flex: 0 0 auto;
+    margin-bottom: 20px; /* Add space between statistics */
 }
 
-.statistic i {
-    font-size: 36px;
+/* Icon in statistic styles */
+.statistic img {
+    width: 36px; /* Adjust the width of your icon */
+    height: 36px; /* Adjust the height of your icon */
     margin-bottom: 10px;
-    color: white;
 }
 
+/* Heading in statistic styles */
 .statistic h3 {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
+/* Paragraph in statistic styles */
 .statistic p {
     font-size: 16px;
     font-weight: bold;
 }
 
+/* Additional style for the title in the first column */
+.title-statistic {
+    flex-basis: 100%; /* Make the title span the full width */
+}
+
+/* Our Programs section styles */
 .our-programs {
     padding: 50px 0;
     text-align: center;
 }
 
+/* Section title styles */
 .section-title {
     margin-bottom: 30px;
     text-align: center;
+    color: #3D66C9;
 }
 
+/* Section paragraph styles */
+.section-paragraph {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Program categories styles */
 .program-categories {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+/* Category styles */
 .category {
-    width: 30%; /* Adjust the width as needed */
+    width: 30%;
     text-align: center;
     margin: 20px 0;
+    padding: 80px; /* Double the padding to increase the height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    box-sizing: border-box; /* Include padding in the total height */
 }
 
-.category img {
-    width: 100%; /* Adjust the width of the images */
-    height: auto;
+/* Category title styles */
+.category h3 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* Category paragraph styles */
 .category p {
     font-size: 16px;
     margin-bottom: 15px;
-    text-align: center;
 }
 
+/* Styles for the new row with three columns */
+.new-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px; /* Adjust margin as needed */
+    background-color: transparent; /* Set background color to primary color */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Styles for the columns in the new row */
+.new-row .col {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+    color: black; /* Set text color to black */
+}
+
+/* Black button styles */
 .btn-black {
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+    color: white; /* Change text color to white */
+    background-color: #3D66C9; /* Change background color to primary */
+    border: 1px solid #3D66C9; /* Set border color to primary */
     padding: 10px 20px;
     text-decoration: none;
 }
 
-/* Style for the Join Us section */
+
+
+/* Join Us section styles */
 .join-us-section {
-    background-color: #EBA340; /* Secondary color as background for the entire section */
-    padding: 20px; /* Add padding as needed */
-    color: #3D66C9; /* Text color is primary */
+    background-color: #EBA340;
+    padding: 20px;
+    color: #3D66C9;
 }
 
-/* Style for the section title */
+/* Section title in Join Us styles */
 .join-us-section h2 {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
     text-align: center;
-    color: #3D66C9; /* Font color of the title is primary */
+    color: #3D66C9;
 }
 
-/* Style for the primary background color for columns */
+/* Primary background color for columns styles */
 .primary-bg {
-    background-color: transparent; /* Make the column background transparent */
-    padding: 20px; /* Add padding as needed */
-    color: #FFF; /* Text color for better contrast */
-    text-align: center;
-    margin-bottom: 20px; /* Add space between columns and buttons */
-}
-
-/* Style for the image container with primary background */
-.image-container {
-    background-color: transparent; /* Primary color as the background for images */
-    padding: 20px; /* Add padding as needed */
-    text-align: center;
-    background-position: left top; /* Set background position to left and top */
-    background-size: 100% 100%; /* Ensure the background covers the entire container */
-    border-radius: 0 50px 50px 0; /* Apply border radius to the left side */
-    overflow: hidden; /* Hide overflow content (make it invisible to bottom and right) */
-}
-
-/* Style for the buttons below each column */
-.image-container button {
-    background-color: #3D66C9; /* Primary color as the button background */
-    color: #FFF; /* Text color for better contrast */
-    margin-top: 10px; /* Add space between the image and the button */
-}
-
-/* Style for the Success Stories section */
-.success-stories-section {
-    background-color: #FFF; /* Change to white background */
-    padding: 20px; /* Add padding as needed */
-    color: #3D66C9; /* Text color is primary */
-    text-align: center; /* Center-align the content */
-}
-
-/* Style for the section title */
-.success-stories-section h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #3D66C9; /* Font color of the title is primary */
-    margin-bottom: 20px; /* Add space below the title */
-}
-
-/* Style for the container of the two columns */
-.success-stories-content {
-    display: flex; /* Use flexbox to create a row layout */
-    justify-content: space-between; /* Space out the two columns */
-}
-
-/* Style for the column with the circular-framed image */
-.image-column {
-    flex: 0 0 48%; /* Take up 48% of the available space, leaving room for the other column */
-    background-color: transparent; /* Set background of column one to transparent */
-}
-
-/* Style for the circular-framed image */
-.image-container.success-stories {
-    border-radius: 50%; /* Make the frame circular */
-    overflow: hidden; /* Hide overflow for a clean circle */
-}
-
-/* Style for the column with three paragraphs */
-.text-column {
-    flex: 0 0 48%; /* Take up 48% of the available space, leaving room for the other column */
-    text-align: left; /* Align text to the left */
-}
-
-/* Style for paragraphs in the text column */
-.text-column p {
-    margin-bottom: 15px; /* Add space between paragraphs */
-    color: #000; /* Set text color to black */
-}
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Our Partners and Network Section */
-.partners-section {
-    background-color: #3D66C9;
+    background-color: transparent;
     padding: 20px;
     color: #FFF;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Slideshow Section */
-.slideshow-section {
-    text-align: center;
+/* Image container with primary background styles */
+.image-container {
+    background-color: transparent;
     padding: 20px;
-}
-
-.slideshow-container {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: auto;
-    position: relative;
+    text-align: center;
+    background-position: left top;
+    background-size: 100% 100%;
+    border-radius: 0 50px 50px 0;
     overflow: hidden;
 }
 
-.slide {
-    display: none;
-    position: absolute;
+/* Button below each column styles */
+.image-container a {
+    display: block;
+    background-color: #3D66C9; /* Primary color as the button background */
+    color: #FFF; /* Text color for better contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto; /* Center the button horizontally */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.image-container a:hover {
+    background-color: #265292; /* Adjust the hover color as needed */
+}
+
+/* Success Stories section styles */
+.success-stories-section {
+    background-color: transparent; /* Set the background to transparent */
+    padding: 20px;
+    color: #3D66C9;
+    text-align: center;
+}
+
+/* Section title in Success Stories styles */
+.success-stories-section h2 {
+    font-size: 24px;
+    color: #3D66C9;
+    margin-bottom: 20px;
+}
+
+/* Container of the two columns styles */
+.success-stories-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Column with the circular-framed image styles */
+.image-column {
+    flex: 0 0 48%;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Circular-framed image styles */
+.image-container.success-stories {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Image inside circular frame styles */
+.image-container.success-stories img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Column with three paragraphs and a button styles */
+.text-column {
+    flex: 0 0 48%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Paragraph in the text column styles */
+.text-column p {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Button in the text column styles */
+.text-column a.btn-primary {
+    background-color: #3D66C9;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* Partners section styles */
+.partners-section {
+    background-color: transparent;
+    padding: 20px;
+    color: #3D66C9; /* Primary color for the title */
+    text-align: center;
+}
+
+/* Section title styles */
+.partners-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Partners container styles */
+.partners-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Partner logo styles */
+.partner-logo {
+    width: 100px; /* Adjust the width as needed for consistent size */
     height: auto;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-/* Animation for fading between slides */
-.fade {
-    animation: fade 1.5s ease-in-out infinite;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 /* Our Story Section */
 .our-story-section {
@@ -326,21 +406,24 @@ img {
 
 /* Style for the image in the column */
 .column img {
-    width: 100%; /* Make the image fill the container */
+    width: 100%;
+    max-height: 220px; /* Set a maximum height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 /* Style for the text in the column */
 .column p {
-    color: #000; /* Set text color to black */
-    margin-bottom: 15px; /* Add space below the paragraph */
+    color: #000;
+    margin-bottom: 15px;
 }
 
 /* Style for the additional paragraph and button */
 .additional-paragraph {
     text-align: right;
-    color: #000; /* Set text color to black */
-    margin-bottom: 20px; /* Add space below the paragraph */
+    color: #000;
+    margin-bottom: 20px;
 }
+
 
 /* Style for the Our Team button */
 .our-team-button {
@@ -357,6 +440,83 @@ img {
 .our-team-button:hover {
     background-color: #EBA340;
 }
+
+/* Meet MAISHA YANGU Team Section Styles */
+.team-section {
+    background-color: transparent; /* Set the background color to transparent */
+    padding: 20px;
+    color: #3D66C9; /* Text color is primary */
+    text-align: center;
+}
+
+/* Section title styles */
+.team-section .section-title {
+    font-size: 24px;
+    color: #3D66C9;
+    margin-bottom: 20px;
+}
+
+/* Team Member Styles */
+.team-member {
+    margin-bottom: 30px;
+}
+
+/* Image Styles */
+.team-member img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* LinkedIn Icon Styles */
+.team-member a img {
+    width: 30px; /* Set the width of the LinkedIn icon */
+    margin-top: 10px; /* Adjust the spacing between the image and LinkedIn icon */
+}
+
+/* Paragraph Styles */
+.team-member p {
+    color: black; /* Set text color to black */
+    margin-bottom: 15px; /* Add space below the paragraph */
+}
+
+/* Bold Paragraph Styles */
+.team-member .bold-paragraph {
+    font-weight: bold; /* Make the paragraph bold */
+}
+
+/* Board Members section styles */
+.board-members-section {
+    background-color: #FFF; /* Set your preferred background color */
+    padding: 20px;
+    color: #3D66C9; /* Text color in primary color */
+    text-align: center;
+}
+
+/* Board Member Column styles */
+.board-member {
+    flex: 0 0 48%; /* Adjust the size of both image and text columns */
+    margin-bottom: 20px; /* Add space between columns */
+    text-align: center; /* Align text to the center */
+}
+
+/* Style for the image in the column */
+.board-member img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Style for the paragraphs in the column */
+.board-member p {
+    margin-bottom: 15px;
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the bold paragraph in the column */
+.board-member p.bold-paragraph {
+    font-weight: bold;
+}
+
+
 
 /* Footer Section */
 .footer-section {
@@ -539,7 +699,7 @@ img {
 
 /* Core Values Section */
 .core-values-section {
-    background-color: #f8f8f8;
+    background-color: transparent;
     padding: 40px 0;
 }
 
@@ -557,6 +717,7 @@ img {
 .heart-icon-img {
     max-width: 100px; /* Adjust the size as needed */
     margin-bottom: 15px;
+    background-color: #3D66C9;
 }
 
 /* Paragraphs */
@@ -899,6 +1060,29 @@ img {
     margin-top: 10px; /* Add space above the button */
 }
 
+/* Style for the images in the Education, Personality, Talents, and Community sections */
+.education-container img,
+.personality-container img,
+.talents-container img,
+.community-container img {
+    width: 100%; /* Make the images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px; /* Add space below each image */
+}
+
+/* Style for the buttons in the New Section */
+.new-container .primary-btn {
+    display: block; /* Make the button a block element to control its width */
+    margin: 10px auto; /* Center the button horizontally and add space around it */
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+}
+
+
+
 /* Style for the Our Impact Section */
 .our-impact-section {
     background-color: transparent; /* Set background color to transparent */
@@ -1028,81 +1212,7 @@ i {
     margin: 0; /* Remove margin around the images */
 }
 
-/* Style for the Our Concept section */
-.our-concept-section {
-    text-align: center; /* Align the content at the center */
-    padding: 20px; /* Add padding as needed */
-    color: #3D66C9; /* Text color is primary */
-}
 
-/* Style for the paragraph in Our Concept section */
-.our-concept-section p {
-    text-align: left; /* Align the paragraph to the left */
-    color: black; /* Text color for the paragraph */
-}
-
-/* Add your existing styles here */
-
-/* Concept Section Styles */
-.concept-section {
-    padding: 50px 0;
-}
-
-.section-image {
-    width: 100%; /* Adjust the width if needed */
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.section-paragraph {
-    font-size: 18px; /* Adjust the size as needed */
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* First Section Styles */
-.first-section {
-    background-image: url('assets/images/vision.png');
-    /* Add other background styles as needed */
-}
-
-.text-paragraph {
-    color: #EBA340;
-    /* Add other styles for the paragraph */
-}
-/* Add your existing styles here */
-
-/* Form Styles */
-.donation-form {
-    background-color: white;
-    color: black;
-    padding: 20px;
-}
-
-.form-header {
-    font-weight: bold;
-}
-
-.form-text {
-    margin-top: 20px;
-}
-
-.select-campaign select,
-.amount-options input[type="text"],
-.preset-amounts label {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.preset-amounts label {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Add your existing styles here */
 
 /* Mentor Introduction Section Styles */
 .mentor-intro {
@@ -1307,4 +1417,137 @@ button[type="submit"] {
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+
+/* Style for the Our Concept section */
+.our-concept-section {
+    background-color: #FFF; /* Set the background color as needed */
+    padding: 20px;
+    color: #3D66C9;
+    text-align: left;
+}
+
+/* Paragraph in the Our Concept section styles */
+.our-concept-section p {
+    text-align: left; /* Align the paragraph to the left */
+    color: #000; /* Text color is black */
+    margin-bottom: 20px; /* Add space below each paragraph */
+}
+
+/* Concept Section Styles */
+.concept-section {
+    padding: 50px 0;
+}
+
+.section-image {
+    width: 100%; /* Adjust the width if needed */
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px;
+}
+
+.section-paragraph {
+    font-size: 18px; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* First Section Styles */
+.first-section {
+    background-image: url('assets/images/vision.png');
+    /* Add other background styles as needed */
+}
+
+.text-paragraph {
+    color: #EBA340;
+    /* Add other styles for the paragraph */
+    text-align: left;
+}
+
+/* Form Styles */
+.donation-form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.form-header {
+    font-weight: bold;
+}
+
+.form-text {
+    margin-top: 20px;
+}
+
+.select-campaign select,
+.amount-options input[type="text"],
+.preset-amounts label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.preset-amounts label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Icons Row in the Our Concept section styles */
+.row {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* Icon Column in the Our Concept section styles */
+.col-md-2 {
+    text-align: left;
+    margin-bottom: 20px; /* Add space below each icon */
+}
+
+/* Icon Image in the Our Concept section styles */
+.col-md-2 img {
+    width: 100%; /* Make the image fill the container */
+    height: 80px; /* Set a fixed height for the icons */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+/* Icon Paragraph in the Our Concept section styles */
+.col-md-2 p {
+    margin-top: 10px; /* Add space above the text */
+    color: #000; /* Set text color to black */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Background colors for the icons */
+.col-md-2:nth-child(-n+3) img {
+    background-color: #A5C98E; /* Background color for the first three icons in the first row */
+}
+
+.col-md-2:nth-child(n+4):nth-child(-n+6) img {
+    background-color: #EE9C64; /* Background color for the last three icons in the first row */
+}
+
+.col-md-2:nth-child(n+7):nth-child(-n+9) img {
+    background-color: #A4C5E3; /* Background color for the first three icons in the second row */
+}
+
+.col-md-2:nth-child(n+10) img {
+    background-color: #D9D9D9; /* Background color for the last three icons in the second row */
+}
+
+/* Background color for the three columns in one row */
+.row .col-md-4 {
+    background-color: #D9D9D9; /* Set the background color as needed */
+    padding: 20px; /* Add padding for better visibility */
+    margin-bottom: 20px; /* Add space below each column */
+}
+
+/* Center align the Our Programs button */
+.col-md-12 button {
+    display: block;
+    margin: 0 auto;
 }
