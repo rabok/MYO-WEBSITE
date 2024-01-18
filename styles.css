@@ -535,27 +535,44 @@ img {
     justify-content: center; /* Center-align columns horizontally */
     flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
 }
+/* Add this CSS to your existing stylesheet or create a new one */
 
-/* Style for the heart icon container */
-.heart-icon {
-    width: 30px; /* Set width of the heart icon container */
-    height: 30px; /* Set height of the heart icon container */
-    position: relative; /* Position the icon container relative to its parent */
-    margin: 0 auto 10px; /* Add space below the heart icon container */
-    background-color: transparent; /* Set background color to transparent */
+/* Core Values Section */
+.core-values-section {
+    background-color: #f8f8f8;
+    padding: 40px 0;
 }
 
-/* Style for the heart icon ::before pseudo-element */
-.heart-icon::before,
-.heart-icon::after {
-    content: ""; /* Empty content for pseudo-elements */
-    position: absolute; /* Position the pseudo-elements absolutely */
-    top: 0; /* Align pseudo-elements at the top of the heart icon container */
-    width: 15px; /* Set width of the pseudo-elements */
-    height: 25px; /* Set height of the pseudo-elements */
-    background-color: #3D66C9; /* Primary color for the heart shape */
-    border-radius: 50%; /* Create a circular shape */
+/* Container for Core Values content */
+.core-values-container {
+    text-align: center;
 }
+
+/* Title for Core Values */
+.core-values-container h2 {
+    color: #3D66C9;
+}
+
+/* Heart Icon Image */
+.heart-icon-img {
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.love-column p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .love-column {
+        margin-bottom: 30px;
+    }
+}
+
 
 /* Position the left pseudo-element on the left side */
 .heart-icon::before {
