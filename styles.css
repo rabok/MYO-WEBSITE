@@ -5,12 +5,6 @@ body {
     color: #fff;
     text-align: justify;
 }
-
-/* Apply margin to the entire body */
-body {
-    margin: 0 40px;
-}
-
 .nav-item:hover .dropdown-menu {
     display: block;
 }
@@ -23,7 +17,7 @@ body {
 /* Custom styles for the logo */
 .logo {
     max-width: 100px; /* Define the maximum width for the logo */
-    margin-right: 15px; /* Add margin for spacing from the edge */
+    margin-right: 10px; /* Add margin for spacing from the edge */
 }
 
 /* Custom style for the navigation bar */
