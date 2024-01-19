@@ -773,30 +773,9 @@ body {
 /* Style for the Our Programs section */
 .our-programs-section {
     background-color: transparent; /* Secondary color as background for the entire section */
-    padding: 20px; /* Add padding as needed */
     color: #3D66C9; /* Text color is primary */
-    text-align: center; /* Center the text */
+    text-align: left; /* Center the text */
 }
-
-/* Style for the Our Programs container */
-.our-programs-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-}
-/* Style for the Our Programs section */
-.our-programs-section {
-    background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
-    color: #3D66C9; /* Text color is primary */
-    text-align: center; /* Center the text */
-}
-
-/* Style for the Our Programs container */
-.our-programs-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
 /* Style for paragraphs in Our Programs */
 .our-programs-container p {
     color: #000; /* Set text color to black */
@@ -807,14 +786,7 @@ body {
 /* Style for the Education section */
 .education-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
     color: #000; /* Text color is black */
-}
-
-/* Style for the Education container */
-.education-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Style for the Education section title */
@@ -847,14 +819,7 @@ body {
 /* Style for the Personality section */
 .personality-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
     color: #3D66C9; /* Text color is primary */
-}
-
-/* Style for the Personality container */
-.personality-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Style for the Personality section title */
@@ -891,14 +856,7 @@ body {
 /* Style for the Talents section */
 .talents-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
     color: #000; /* Text color is primary */
-}
-
-/* Style for the Talents container */
-.talents-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Style for the Talents section title */
@@ -915,7 +873,7 @@ body {
 
 .talents-container .col-md-6 {
     width: 50%; /* Set width of columns to 50% for two columns in each row */
-    float: left; /* Float the columns left for side-by-side placement */
+    float: center; /* Float the columns left for side-by-side placement */
 }
 
 /* Style for the heading in the second column */
@@ -926,14 +884,7 @@ body {
 /* Style for the Community section */
 .community-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
     color: #000; /* Text color is primary */
-}
-
-/* Style for the Community container */
-.community-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Style for the Community section title */
@@ -946,15 +897,9 @@ body {
 /* Style for the New Section */
 .new-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
     color: #3D66C9; /* Text color is primary */
 }
 
-/* Style for the New Section container */
-.new-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-}
 
 /* Style for the centered paragraph */
 .new-container .centered-paragraph {
@@ -1038,11 +983,6 @@ body {
     justify-content: center; /* Center items horizontally and vertically */
 }
 
-/* Style for the New Section container */
-.new-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-}
 
 /* Style for the centered paragraph */
 .centered-paragraph {
@@ -1091,15 +1031,8 @@ body {
     text-align: center; /* Align the content at the center */
 }
 
-/* Style for the Our Impact Container */
-.our-impact-container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
 /* Style for the Centered Title */
 .centered-title {
-    font-size: 24px; /* Adjust the font size as needed */
     color: #3D66C9; /* Text color is primary */
     margin-top: 20px; /* Add space at the top */
 }
@@ -1107,12 +1040,11 @@ body {
 /* Style for the Two Paragraphs Section */
 .two-paragraphs-section {
     background-color: transparent; /* Set background color to transparent */
-    padding: 20px; /* Add padding as needed */
 }
 
 /* Style for the Two Paragraphs Container */
 .two-paragraphs-container {
-    max-width: 800px; /* Set max-width of the container */
+    max-width: 100%;/* Set max-width of the container */
     margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -1125,7 +1057,6 @@ body {
 /* Style for the new section with primary color background */
 .four-columns-section {
     background-color: #3D66C9; /* Set primary color as background */
-    padding: 20px; /* Add padding as needed */
     color: #FFF; /* Text color is white */
 }
 
@@ -1151,29 +1082,21 @@ body {
 
 .col-md-3 {
     width: 22%; /* Adjust width as needed */
-    text-align: center;
-    margin: 10px 0;
+    text-align: left;
+    margin: 0;
 }
 
 /* Style for icons */
 i {
     color: #fff; /* Set icon color */
     background-color: #3D66C9; /* Set background color for icons */
-    padding: 10px;
     border-radius: 50%; /* Make the icons circular */
 }
 
 /* Style for the new section */
 .new-section {
     background-color: transparent; /* Set background color to transparent or any desired color */
-    padding: 20px; /* Add padding as needed */
     color: #000; /* Set text color to black */
-}
-
-/* Style for the container within the section */
-.new-section .container {
-    max-width: 800px; /* Set max-width of the container */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* Style for the centered paragraph */
@@ -1205,11 +1128,25 @@ i {
 
 /* Style for images within columns */
 .new-section img {
-    width: 90%; /* Adjust the width of the images */
+    width: 100%; /* Adjust the width of the images to 100% */
+    max-width: 200px; /* Set a maximum width to control the size */
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0; /* Remove margin around the images */
+}
+
+/* Style for the New Section with 4 Paragraphs */
+.new-section {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Style for the paragraphs */
+.new-section-paragraph {
+    text-align: left;
+    margin-bottom: 10px; /* Set a specific margin value between paragraphs */
+    color: #000;
 }
 
 
@@ -1467,12 +1404,14 @@ button[type="submit"] {
 /* Form Styles */
 .donation-form {
     background-color: white;
-    color: black;
+    color: black; /* Text color is set to black */
     padding: 20px;
 }
 
 .form-header {
     font-weight: bold;
+    text-align: center; /* Centering the text */
+    color: #3D66C9; /* Primary color for the heading */
 }
 
 .form-text {
@@ -1481,18 +1420,77 @@ button[type="submit"] {
 
 .select-campaign select,
 .amount-options input[type="text"],
-.preset-amounts label {
+.preset-amounts label,
+.select-frequency label {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .preset-amounts label {
     display: inline-block;
     margin-right: 10px;
 }
+
+.select-frequency label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #FBB80B; /* Secondary color */
+    color: black; /* Text color is set to black */
+    padding: 8px 16px; /* Smaller padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin: 20px auto; /* Centering the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #E0A21D; /* Darker color on hover */
+}
+
+/* Second Section Styles */
+.second-section {
+    color: black; /* Text color is set to black */
+    margin-top: 20px;
+}
+
+.second-section p {
+    text-align: center; /* Centering the text */
+}
+
+.second-section h3 {
+    color: #3D66C9; /* Primary color for the heading */
+}
+
+.second-section img {
+    width: 100%; /* Make sure images take the full width of their container */
+}
+
+/* Style for "Take Action!" button */
+.btn-secondary {
+    background-color: #FBB80B; /* Secondary color */
+    color: black; /* Text color is set to black */
+    padding: 8px 16px; /* Smaller padding */
+    display: block;
+    margin: 20px auto; /* Centering the button */
+    text-align: center; /* Centering the text */
+    text-decoration: none; /* Remove underline for links */
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #E0A21D; /* Darker color on hover */
+}
+
 
 /* Icons Row in the Our Concept section styles */
 .row {
@@ -1551,3 +1549,5 @@ button[type="submit"] {
     display: block;
     margin: 0 auto;
 }
+
+/*Sponsor a child page*/

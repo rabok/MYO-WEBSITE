@@ -101,58 +101,152 @@
                     <!-- First Column - Donate Form -->
                     <div class="col-lg-6">
                         <!-- Your donation form goes here -->
-                        <form action="process_donation.php" method="post" class="donation-form">
-                            <div class="form-header">
-                                <strong>Take Action!</strong>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="form-text">
-                                <p>Select a Campaign:</p>
-                                <div class="select-campaign">
-                                    <!-- Add options for campaigns as needed -->
-                                    <select name="campaign" id="campaign">
-                                        <option value="campaign1">Campaign 1</option>
-                                        <option value="campaign2">Campaign 2</option>
-                                        <option value="campaign3">Campaign 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-text">
-                                <p>Select or enter an amount:</p>
-                                <div class="amount-options">
-                                    <!-- Add amount options as needed -->
-                                    <input type="text" name="customAmount" placeholder="Enter custom amount">
-                                    <div class="preset-amounts">
-                                        <label>
-                                            <input type="radio" name="amount" value="500"> $500
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="amount" value="750"> $750
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="amount" value="1000"> $1000
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="amount" value="1500"> $1500
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more form fields as needed -->
-                            <input type="submit" value="Donate Now">
-                        </form>
-                    </div>
+<form action="process_donation.php" method="post" class="donation-form">
+    <div class="form-header">
+        <strong>Take Action!</strong>
+        <br>
+        <br>
+    </div>
+
+    <div class="form-text">
+        <p>Select a Campaign:</p>
+        <div class="select-campaign">
+            <!-- Add options for campaigns as needed -->
+            <select name="campaign" id="campaign">
+                <option value="campaign1">Campaign 1</option>
+                <option value="campaign2">Campaign 2</option>
+                <option value="campaign3">Campaign 3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-text">
+        <p>Select or enter an amount:</p>
+        <div class="amount-options">
+            <!-- Add amount options as needed -->
+            <input type="text" name="customAmount" placeholder="Enter custom amount">
+            <div class="preset-amounts">
+                <label>
+                    <input type="radio" name="amount" value="500"> $500
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="750"> $750
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="1000"> $1000
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="1500"> $1500
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-text">
+        <p>Select Donation Frequency:</p>
+        <div class="select-frequency">
+            <label>
+                <input type="radio" name="frequency" value="one-time" checked> One Time
+            </label>
+            <label>
+                <input type="radio" name="frequency" value="recurring"> Recurring
+            </label>
+        </div>
+    </div>
+
+    <!-- Add more form fields as needed -->
+
+    <input type="submit" value="Give">
+</form>
+ </div>
     
-                    <!-- Second Column - Text Paragraph -->
+ <!-- Second Column - Text Paragraph -->
                     <div class="col-lg-6">
                         <p class="text-paragraph">
-                            Make a difference in a young person's life.
+                            <h2>Make a difference in a young person's life.</h2>
                     </div>
                 </div>
             </div>
+          
         </section>
-   
+
+        
+   <!-- Second Section with Four Rows -->
+<section class="second-section">
+    <p>At Maisha Yangu Organization, we help 150 children from low-income households in Kawangware, Kenya, succeed in school, work, and life.</p>
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="path/to/image1.jpg" alt="Image 1">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Title 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vel porta
+                    tristique. Curabitur non quam et ligula efficitur rhoncus.
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="path/to/image2.jpg" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Title 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vel porta
+                    tristique. Curabitur non quam et ligula efficitur rhoncus.
+                </p>
+               
+            </div>
+        </div>
+
+         <!-- Row 2 -->
+         <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="path/to/image2.jpg" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Title 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vel porta
+                    tristique. Curabitur non quam et ligula efficitur rhoncus.
+                </p>
+               
+            </div>
+        </div>
+         <!-- Row 2 -->
+         <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="path/to/image2.jpg" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Title 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vel porta
+                    tristique. Curabitur non quam et ligula efficitur rhoncus.
+                </p>
+               
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <!-- ... (repeat the structure for additional rows) -->
+    </div>
+     <!-- Take Action! Button -->
+     <a href="#" class="btn btn-secondary center-block">Take Action!</a>
+</section>
+
 
 
 <!-- Footer Section -->

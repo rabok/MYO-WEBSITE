@@ -14,8 +14,8 @@
 
     <!-- Link to your separate styles.css file -->
     <link rel="stylesheet" href="styles.css">
-</head>
 
+</head>
 <body>
     <!-- Navigation Bar Section -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -87,13 +87,8 @@
             </div>
         </div>
     </nav>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Our Impact</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Make sure to link to your actual CSS file -->
-    </head>
-    <body>
+        <!-- All content wrapped in a container -->
+    <div class="container">
     
         <!-- Our Impact Section -->
         <section class="our-impact-section">
@@ -119,35 +114,42 @@
             <!-- Use Font Awesome directly without external links -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
 
-<!-- New Section with Four Columns -->
-<section class="four-columns-section">
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <!-- Column 1 Content with Graduation Cap Icon -->
-            <i class="fas fa-graduation-cap fa-3x"></i>
-            <p><strong>200</strong></p>
-            <p>Educated Students</p>
-        </div>
-        <div class="col-md-3 text-center">
-            <!-- Column 2 Content with Training Icon -->
-            <i class="fas fa-chalkboard-teacher fa-3x"></i>
-            <p><strong>500</strong></p>
-            <p>Community Members Trained</p>
-        </div>
-        <div class="col-md-3 text-center">
-            <!-- Column 3 Content with Hand Holding Gift Icon -->
-            <i class="fas fa-hand-holding fa-gift fa-3x"></i>
-            <p><strong>9400</strong></p>
-            <p>Meals Served</p>
-        </div>
-        <div class="col-md-3 text-center">
-            <!-- Column 4 Content with Love Shape Icon -->
-            <i class="fas fa-heart fa-3x"></i>
-            <p><strong>350 000</strong></p>
-            <p>Hours Children had a safe space</p>
+<!-- Add this section after your existing content -->
+<section class="impact-section">
+    <div class="container">
+        <div class="impact-content">
+            <div class="impact-stats">
+                <!-- Column 2: Students Educated -->
+                <div class="statistic">
+                    <img src="assets/images/graduation.svg" alt="Icon 1">
+                    <h3>Educated Students</h3>
+                    <p>200</p>
+                </div>
+                <!-- Column 3: Community Engagement 1 -->
+                <div class="statistic">
+                    <img src="assets/images/community.svg" alt="Icon 2">
+                    <h3>Community Members Trained</h3>
+                    <p>500</p>
+                </div>
+                <!-- Column 4: Community Engagement 2 -->
+                <div class="statistic">
+                    <img src="assets/images/meal.svg" alt="Icon 3">
+                    <h3>Meals Served</h3>
+                    <p>9400</p>
+                </div>
+                <!-- Column 5: Community Engagement 3 -->
+                <div class="statistic">
+                    <img src="assets/images/heart.svg" alt="Icon 4">
+                    <h3>Hours Children have a safe space</h3>
+                    <p>350,000</p>
+                </div>
+                <!-- Add more statistics as needed -->
+            </div>
         </div>
     </div>
 </section>
+
+
 <!-- New Section -->
 <section class="new-section">
     <!-- Container for centering content -->
@@ -183,10 +185,46 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <!-- Paragraphs and Image Row -->
+        <div class="row">
+            <!-- Paragraph 1 -->
+            <div class="col-md-6">
+                <p class="new-section-paragraph"> We want to continuously improve our education services and increase the positive impact on our community.
+                </p>
+            </div>
+
+            <!-- Image in the same row as paragraph one -->
+            <div class="col-md-6">
+                <img src="assets/images/Group 255.svg" alt="Image Description">
+            </div>
+        </div>
+        <!-- Paragraph 2 -->
+        <p class="new-section-paragraph">
+            Therefore, we use a monitoring and evaluation system with clear, measurable targets. In addition, we have regularly checked the impact of our programs by means
+            of surveys and personal feedback meetings with our students, their parents, and the community at large.
+        </p>
+
+        <!-- Paragraph 3 -->
+        <p class="new-section-paragraph">
+            Thanks to our impact assessments, we know that children who have taken part in our programs achieve significantly better marks and more discipline compared to those who have not.
+            We have also proved that supplementary psychosocial development work done leads to considerably higher completion rates in school, better family dynamics, and reduced delinquent behavior.
+        </p>
+
+        <!-- Paragraph 4 -->
+        <div class="row">
+            <div class="col-md-6">
+                <p class="new-section-paragraph">
+                    Here from our students what they say about their experiences with Maisha Yangu.
+                </p>
+            </div>
+
+            <!-- Our Success Stories Button in the same row as paragraph four -->
+<div class="col-md-6">
+    <a href="oursuccessstories.html" class="btn btn-primary" target="_blank">Our Success Stories</a>
+</div>
 </section>
-
-
-
+</body>
 <!-- Footer Section -->
 <footer class="footer-section">
     <div class="widgets-container">
@@ -241,5 +279,6 @@
     
     <p>&copy; 2023 Maisha Yangu Organization Designed by Mywebbworks</p>
 </footer>
+</div>
 </body>
 </html>
