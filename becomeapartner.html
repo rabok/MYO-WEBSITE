@@ -81,7 +81,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link support-button" href="#">Support Us</a>
+                        <a class="nav-link support-button" href="supportus.html">Support Us</a>
                     </li>         
                 </ul>
             </div>
@@ -93,7 +93,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Become a Partner</title>
 </head>
-
+<!-- All content wrapped in a container -->
+<div class="container">
 <header>
     <h1>Become a Partner</h1>
 </header>
@@ -154,7 +155,7 @@
         </div>
         
     </section>
-    <!-- New Section: Our Partners -->
+   <!-- New Section: Our Partners -->
 <section class="partners-section">
     <header>
         <h2>Our Partners</h2>
@@ -165,179 +166,87 @@
         <p>We're so grateful to have partners who share values and are driving positive change</p>
     </div>
 
-    <!-- Slideshow of Partners -->
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <!-- Partner 1 Content -->
-            <img src="assets/images/partner1.png" alt="Partner 1" class="logo-image">
-        </div>
-
-        <div class="mySlides">
-            <!-- Partner 2 Content -->
-            <img src="assets/images/partner2.svg" alt="Partner 2" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 4 Content -->
-            <img src="assets/images/partner3.svg" alt="Partner 3" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 4 Content -->
-            <img src="assets/images/partner4.png" alt="Partner 4" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 5 Content -->
-            <img src="assets/images/partner5.png" alt="Partner 5" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 6 Content -->
-            <img src="assets/images/partner6.jpeg" alt="Partner 6" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 7 Content -->
-            <img src="assets/images/partner7.png" alt="Partner 7" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 8 Content -->
-            <img src="assets/images/partner8.jpg" alt="Partner 8" class="logo-image">
-        </div>
-        <div class="mySlides">
-            <!-- Partner 9 Content -->
-            <img src="assets/images/partner 9.png" alt="Partner 9" class="logo-image">
-        </div>
-
-
-        <!-- Navigation Dots -->
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-
-            <!-- Add more dots for additional slides -->
-        </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-        
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-        
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-        
-                slideIndex++;
-        
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-        
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-        
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-        
-                setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
-            }
-        </script>
-        
+    <!-- Logos in One Row -->
+    <div class="logos-row">
+        <img src="assets/images/partner1.png" alt="Partner 1" class="logo-image">
+        <img src="assets/images/partner2.svg" alt="Partner 2" class="logo-image">
+        <img src="assets/images/partner3.svg" alt="Partner 3" class="logo-image">
+        <img src="assets/images/partner4.png" alt="Partner 4" class="logo-image">
+        <img src="assets/images/partner5.png" alt="Partner 5" class="logo-image">
+        <img src="assets/images/partner6.jpeg" alt="Partner 6" class="logo-image">
+        <img src="assets/images/partner7.png" alt="Partner 7" class="logo-image">
+        <img src="assets/images/partner8.jpg" alt="Partner 8" class="logo-image">
+        <img src="assets/images/partner 9.png" alt="Partner 9" class="logo-image">
     </div>
+</section>
+
     <!-- Join Our Network Form Section -->
 <section class="join-network-section">
     <h2>Join Our Network</h2>
     <p>Fill out the form below to join our network and become a part of our community.</p>
 
   <!-- Form -->
-<form action="#" method="post">
-<!-- First Row -->
-<div class="form-row">
-    <div class="form-field">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-    </div>
+  <div class="column">
+    <!-- Your form goes here -->
+    <form action="#" method="post">
+        <h2>Join Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
 
-    <div class="form-field">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-    </div>
-</div>
-
-<!-- Second Row -->
-<div class="form-row">
-    <div class="form-field">
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
-    </div>
-
-    <div class="form-field">
-        <label for="country">Country:</label>
-        <input type="text" id="country" name="country" required>
-    </div>
-</div>
-
-<!-- Third Row -->
-<div class="form-row">
-    <div class="form-field">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-</div>
-
-<!-- Fourth Row -->
-<div class="form-row">
-    <div class="form-field">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-    </div>
-</div>
-
-<!-- Fifth Row -->
-<div class="form-row">
-    <div class="form-field">
-        <label>What opportunities are you interested in?</label>
-        <div class="opportunity-buttons">
-            <label>
-                <input type="radio" name="opportunities" value="volunteer"> Volunteer
-            </label>
-            <label>
-                <input type="radio" name="opportunities" value="mentor"> Mentor
-            </label>
-            <label>
-                <input type="radio" name="opportunities" value="distanceParent"> Distance Parent
-            </label>
-            <label>
-                <input type="radio" name="opportunities" value="internship"> Internship
-            </label>
-            <label>
-                <input type="radio" name="opportunities" value="partner"> Partner with us
-            </label>
+        <div class="form-group">
+            <label>What opportunities are you interested in?</label>
+            <div class="opportunities">
+                <input type="radio" id="volunteer" name="opportunity" value="volunteer">
+                <label for="volunteer">Volunteer</label>
+            
+                <input type="radio" id="mentor" name="opportunity" value="mentor">
+                <label for="mentor">Mentor</label>
+            
+                <input type="radio" id="distantParent" name="opportunity" value="distantParent">
+                <label for="distantParent">Distant Parent</label>
+            
+                <input type="radio" id="internship" name="opportunity" value="internship">
+                <label for="internship">Internship</label>
+            
+                <input type="radio" id="partner" name="opportunity" value="partner">
+                <label for="partner">Partner with Us</label>
+            </div>
+            
         </div>
-    </div>
+        <input type="submit" value="Submit">
+    </form>
 </div>
-
-<!-- Submit Button -->
-<div class="form-row">
-    <div class="form-field">
-        <button type="submit" style="background-color: #3D66C9; color: #ffffff;">Submit</button>
-    </div>
-</div>
-
-</form>
+               
 
 </section>
-
-
-</section>
-
-
 
 </main>
     </section>
@@ -399,6 +308,7 @@
     
     <p>&copy; 2023 Maisha Yangu Organization Designed by Mywebbworks</p>
 </footer>
+</div>
 </body>
 
 </html>

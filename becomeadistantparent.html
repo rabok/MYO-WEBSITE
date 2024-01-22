@@ -81,114 +81,125 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link support-button" href="#">Support Us</a>
+                        <a class="nav-link support-button" href="supportus.html">Support Us</a>
                     </li>         
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
- <!-- banner  -->
- <section class="banner-section">
-    <div class="banner-image">
-        <!-- Replace 'path/to/your/image.jpg' with the actual path to your background image -->
-        <img src="assets/images/image1.png" alt="Background Image">
-    </div>
-    <div class="banner-content">
-        <h1>Become a Volunteer</h1>
-    </div>
-</section>
-<!-- section for explaining the header section  -->
-<!-- Membership Explanation Section -->
-<section class="membership-section">
-<header>
-    <h2>Why Become a Volunteer</h2>
-</header>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque rem hic qui quia sint exercitationem doloremque 
-    natus incidunt tenetur omnis, ducimus a veniam perferendis ea repellat possimus aliquam modi voluptas!</p>
-</section>
-
-<!-- Table -->
-
-<!-- Volunteer Form Section -->
-<!-- Volunteer Form Section -->
-<section class="volunteer-form-section">
-<div class="form-container">
-    <header>
-        <h2>Become a Volunteer</h2>
-    </header>
-    <form class="volunteer-form">
-        <!-- First Row -->
-        <div class="form-row">
-            <div class="form-field">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
-
-            <div class="form-field">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
+    <body>
+        <!-- All content wrapped in a container -->
+    <div class="container">
+        <!-- First Section -->
+        <div class="section-container">
+            <img class="section-image" src="assets/images/distantparent.png" alt="Section Image">
+            <div class="text-overlay">
+                <h2>Become a Distant Parent</h2>
             </div>
         </div>
-
-        <!-- Second Row -->
-        <div class="form-row">
-            <div class="form-field">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-field">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-        </div>
-
-        <!-- Third Row -->
-        <div class="form-row">
-            <div class="form-field">
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" required>
-            </div>
-
-            <div class="form-field">
-                <label for="state">State:</label>
-                <input type="text" id="state" name="state" required>
-            </div>
-        </div>
-
-        <!-- Fourth Row -->
-        <div class="form-row">
-            <div class="form-field">
-                <label for="message">Why do you want to volunteer with us?</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="form-row">
-            <div class="form-field">
-                <button type="submit">Submit</button>
-            </div>
-        </div>
-    </form>
-</div>
-
-<div class="instructions-container">
-    <h3>How to Fill the Form:</h3>
-    <ol>
-        <li>Step 1: Fill in your personal details (First Name, Last Name, Email, Phone).</li>
-        <li>Step 2: Provide your location details (City, State).</li>
-        <li>Step 3: Share with us why you want to volunteer in the message box.</li>
-    </ol>
-</div>
-</section>
-
-
-
     
+        <p class="section-paragraph"> Maisha Yangu's distance parenting program enables you to support children, their
+            families and entire communities - giving them the chance to grow up healthy, educated and safe - forever changing
+            their life and future. The program is not just about financial assistance; it's about building meaningful connections, nurturing
+            dreams, and fostering a sense of belonging. Join us in making a difference in a child's life.
+        </p>
+    
+        <!-- New Section with Two Columns -->
+        <section class="two-columns-section">
+            <div class="column">
+                <!-- Your form goes here -->
+                <form action="#" method="post">
+                    <h2>Join Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+    
+                    <div class="form-group">
+                        <label>What opportunities are you interested in?</label>
+                        <div class="opportunities">
+                            <input type="radio" id="volunteer" name="opportunity" value="volunteer">
+                            <label for="volunteer">Volunteer</label>
+                        
+                            <input type="radio" id="mentor" name="opportunity" value="mentor">
+                            <label for="mentor">Mentor</label>
+                        
+                            <input type="radio" id="distantParent" name="opportunity" value="distantParent">
+                            <label for="distantParent">Distant Parent</label>
+                        
+                            <input type="radio" id="internship" name="opportunity" value="internship">
+                            <label for="internship">Internship</label>
+                        
+                            <input type="radio" id="partner" name="opportunity" value="partner">
+                            <label for="partner">Partner with Us</label>
+                        </div>
+                        
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            
+            <div class="column">
+                <h2>Get Started in Just 3 Steps!</h2>
+                <p class="numbered-paragraph">1. Signup below and we will revert with a phone call</p>
+                <p class="numbered-paragraph">2. Match you with a student</p>
+                <p class="numbered-paragraph">3. Introduce you to the child</p>
+            </div>
+        </section>
+
+        <!-- New Section -->
+<section class="new-section">
+    <h2 class="section-title">Good to know - Information for distance parents</h2>
+    <div class="section-content">
+        <h3 class="section-subtitle">For what you receive</h3>
+        <p class="section-paragraph">By joining the distance parenting parenting program, you become part of Maisha Yangu 
+            Organization's donor community network. You will receive progress reports of the grades and seasonal greetings
+            from your supported student at the end of each school term. In addition, you will be able to communicate with
+            your supported student through video calls, emails, letters and drawings on a regular basis, as well as 
+            physical meetups if possible. This communication is an essential part of the program, enabling you to hear from 
+            the students and create a relationship wth them and their families. We put empasis on partnering with the parents/ caregivers
+            in providing for the students to foster a sense of responsibility and involvement in the children's lives.
+        </p>
+        <h3 class="section-subtitle">What child recieves</h3>
+        <p class="section-paragraph"> With your financial support of just 25 dollars per month, we can provide the children
+            with school fees, school materials, a hot meal a day and a safe and friendly place to learn and play. </p>
+            <h3 class="section-subtitle">Students</h3>
+            <p class="section-paragraph"> Our students come from Kawangware and are from families living in poverty. Children 
+                sponsored are in grade 4 to 8 and all classes in secondary school.
+            </p>
+            <h3 class="section-subtitle">Duration</h3>
+            <p class="section-paragraph">The minimum duration for the program is one term , which is 3 months. Note that one time donations are accepted. </p>
+    </div>
+</section>
+
+
+
 <!-- Footer Section -->
 <footer class="footer-section">
     <div class="widgets-container">
@@ -243,6 +254,7 @@
     
     <p>&copy; 2023 Maisha Yangu Organization Designed by Mywebbworks</p>
 </footer>
+</div>
 </body>
 
 </html>

@@ -66,7 +66,6 @@ body {
 /* Video display styles */
 .video-img {
     background-color: #EBA340;
-    box-shadow: #EBA340;
     width: 100%;
     height: auto;
 }
@@ -96,6 +95,7 @@ body {
     text-decoration: none;
     float: right;
 }
+
 /* Updated styles for the impact section */
 .impact-section {
     background-color: #EBA340;
@@ -168,6 +168,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 /* Program categories styles */
 .program-categories {
@@ -1256,7 +1257,7 @@ header h1 {
 
 /* Styling for the title in the Our Partners section */
 .partners-section h2 {
-    color: #000000; /* Set title color to black */
+    color: #3D66C9; /* Set title color to primary color */
     margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
 }
 
@@ -1267,35 +1268,19 @@ header h1 {
     color: #000000; /* Set text color to black */
 }
 
-
-/* Styling for the slideshow container */
-.slideshow-container {
-    width: 600px; /* Set the total width to accommodate three partners */
-    white-space: nowrap; /* Prevent line break for inline-block elements */
-    overflow: hidden;
-}
-
-/* Styling for slides */
-.mySlides {
-    display: inline-block; /* Display slides inline */
-    width: calc(200px + 10px); /* Set the fixed width for each slide plus margin-right */
-    animation: slide 5s infinite; /* Change slide duration to 5 seconds */
-    margin-right: 10px; /* Adjust margin between slides as needed */
+/* Styling for the logos row */
+.logos-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 /* Styling for logo images */
 .logo-image {
-    width: 100%; /* Ensure the image fills the slide */
-    height: auto; /* Maintain the aspect ratio */
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(calc(210px * 3)); /* Start from the right, considering 3 partners and margin */
-    }
-    100% {
-        transform: translateX(-210px); /* End at the left, considering 1 partner width and margin */
-    }
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin: 10px; /* Adjust the margin as needed */
 }
 
 /* Add styling for the Join Our Network section */
@@ -1550,4 +1535,280 @@ input[type="submit"]:hover {
     margin: 0 auto;
 }
 
-/*Sponsor a child page*/
+/* Sponsor a child page */
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* First Section Styles */
+.first-section {
+    padding: 30px 0; /* Adjust the padding to modify the height of the background image */
+    background-image: url('assets/images/vision.png'); /* Add the path to your background image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+}
+
+
+/* Donate Form Styles */
+.donation-form {
+    background-color: #F5F5F5;
+    padding: 10px; /* Adjust the padding to reduce the height */
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Text Paragraph Styles */
+.text-paragraph {
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+/* Second Section Styles */
+.second-section {
+    background-color: transparent;
+    padding: 50px 0;
+    color: #333;
+}
+
+.second-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.second-section h3 {
+    color: black;
+}
+
+.text-paragraph h2,
+.second-section p {
+    text-align: left;
+    color: black;
+}
+
+/* Take Action! Button Styles */
+.btn-secondary {
+    background-color: #FBB80B;
+    color: #333; /* Change to desired text color (e.g., black) */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block; /* Change to block to make it a block-level element */
+    margin: 20px 0; /* Add space above and below the button */
+    float: center; /* Align the button to the right */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+}
+
+/*Become a distant parent page*/
+.section-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+}
+
+.section-image {
+    width: 100%;
+    max-height: 50vh; /* Set the max height to half of the viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-paragraph {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Two Columns Section Styles */
+.two-columns-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.column {
+    flex: 0 0 48%; /* Adjust the width of the columns as needed */
+}
+
+/* Numbered Paragraph Styles */
+.numbered-paragraph {
+    background-color: #3D66C9; /* Primary color background */
+    color: #000000; /* Text color for numbered paragraphs */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Form, Title, and Paragraph Styles */
+form,
+.section-paragraph {
+    color: #000000; /* Set the text color to black */
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+/* Form Title Styles */
+form h2 {
+    color: #3D66C9; /* Primary color for form title */
+}
+
+/* Second Column Title Styles */
+.column h2 {
+    color: #000000; /* Set the text color of the second column title to black */
+}
+
+/* Form Styles */
+form {
+    width: 100%; /* Make the form take 100% width of the container */
+}
+
+/* Form Group Styles */
+.form-group {
+    width: 100%; /* Make each form group take 100% width of the form */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-bottom: 15px;
+}
+
+/* Label Styles */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Styles */
+.form-group input {
+    width: 100%; /* Make the input fields take 100% width of the form group */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Name Fields Styles */
+form .name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* City and Country Fields Styles */
+form .location-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+/* Button Styles */
+form button {
+    background-color: #3D66C9; /* Primary color background */
+    color: #fff; /* Text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Adjust spacing between buttons */
+}
+
+/* Button Hover Styles */
+form button:hover {
+    background-color: #295896; /* Darker shade for hover effect */
+}
+/* Opportunities Styles */
+.opportunities {
+    display: flex;
+}
+
+/* Radio Button Styles */
+.opportunities input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing between radio buttons and labels */
+}
+
+/* Label Styles */
+.opportunities label {
+    display: inline-block;
+    margin-right: 15px; /* Adjust spacing between labels */
+}
+/* New Section Styles */
+.new-section {
+    padding: 50px 0;
+}
+
+/* Section Title Styles */
+.section-title {
+    color: #3D66C9; /* Primary color */
+    text-align: left;
+}
+
+/* Section Content Styles */
+.section-content {
+    margin-top: 20px;
+    border: 2px solid #3D66C9; /* Primary color */
+    padding: 20px;
+}
+
+/* Section Subtitle Styles */
+.section-subtitle {
+    color: black;
+    margin-bottom: 10px;
+    text-align: left; /* Align subheadings to the left */
+}
+
+/* Section Paragraph Styles */
+.section-paragraph {
+    color: black;
+    margin-top: 10px;
+    text-align: left; /* Align paragraphs to the left */
+}
+
+/*support us*/
+/* CSS for centering the form and making it full width */
+.form-container {
+    width: 100%;
+    max-width: 1000px; /* Increase the max-width as needed */
+    margin: 0 auto;
+}
+

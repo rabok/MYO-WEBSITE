@@ -14,6 +14,7 @@
 
     <!-- Link to your separate styles.css file -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="volunteer.css">
 </head>
 
 <body>
@@ -87,93 +88,71 @@
             </div>
         </div>
     </nav>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mentorship Program</title>
-</head>
-<body>
-        <section class="mentorship-section">
-            <!-- Section Title -->
-            <h2>Mentorship Program</h2>
+     
+            <!-- All content wrapped in a container -->
+            <div class="container">
             
-            <!-- Paragraphs -->
-            <p> Mentoring is one of the most rewarding ways that makes a lasting impact on anyone's life.
-                As a mentor, you provide the youth with an opportunity to develop skills, and receive guidance
-                and much-needed support that they would other wise not have.
-            </p>
-            <p>We offer a variety of ways to get involved as a mentor:</p>
-    
-            <!-- Two Columns in One Row -->
-            <div class="row">
-                <!-- Column 1: Image -->
-                <div class="col-md-6">
-                    <img src="assets/images/mentor1.png" alt="Mentorship Image">
-                </div>
-                
-                <!-- Column 2: Heading and Paragraph -->
-                <div class="col-md-6">
-                    <h3>Group Mentoring</h3>
-                    <p>Students at Maisha Yangu Center meet in small groups with mentors once a week during school holidays.
-                        Areas of focus include goal-setting, school engagement, decision making, relationships and life skills.
-                        They also have one-on-one sessions with a counseller who provides counseling services.
-                    </p>
-                </div>
+<!-- New Section with Two Columns -->
+<section>
+    <div class="column form-container">
+        <!-- Your form goes here -->
+        <form action="#" method="post">
+            <h2>Support Us</h2>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
             </div>
-    
-            <!-- Repeat for 3 Rows -->
-            <div class="row">
-                <!-- Column 1: Image -->
-                <div class="col-md-6">
-                    <img src="mentorship-image2.jpg" alt="Mentorship Image 2">
-                </div>
-                
-                <!-- Column 2: Heading and Paragraph -->
-                <div class="col-md-6">
-                    <h3>School Mentoring</h3>
-                    <p>Students in grade 6, 7 and 8 from a select number of schools in Kawangware slum meet with
-                        members twice a month. Mentors use curriculum as a guide. Mentees recieve support, guidance, 
-                        and encouragement and learn important life skills.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="row">
-                <!-- Column 1: Image -->
-                <div class="col-md-6">
-                    <img src="assets/images/mentor3.png" alt="Mentorship Image 3">
-                </div>
-                
-                <!-- Column 2: Heading and Paragraph -->
-                <div class="col-md-6">
-                    <h3>One-on-one Mentoring</h3>
-                    <p>Volunteer mentors are matched with students who are registered with the Maisha Yangu Organization.
-                        The volunteers commit to be a mentor for a minimum of 1 year to foster long-term and trusting relationships.
-                        The matches are carefully made according to the life experiences, interests and aspirations of both program-categories
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="new-section">
-            <div class="new-container">
-                <!-- Centered Paragraph -->
-                <p class="centered-paragraph">
-                    Join and support us and become part of our community 
-                </p>
-        
-                <!-- "Become a Mentor" Button -->
-                <button class="primary-btn">Become a Mentor</button>
-            </div>
-        </section>
-        
-    
 
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
 
-</body>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
 
-<!-- Footer Section -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>What opportunities are you interested in?</label>
+                <div class="opportunities">
+                    <input type="radio" id="volunteer" name="opportunity" value="volunteer">
+                    <label for="volunteer">Volunteer</label>
+
+                    <input type="radio" id="mentor" name="opportunity" value="mentor">
+                    <label for="mentor">Mentor</label>
+
+                    <input type="radio" id="distantParent" name="opportunity" value="distantParent">
+                    <label for="distantParent">Distant Parent</label>
+
+                    <input type="radio" id="internship" name="opportunity" value="internship">
+                    <label for="internship">Internship</label>
+
+                    <input type="radio" id="partner" name="opportunity" value="partner">
+                    <label for="partner">Partner with Us</label>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+
+                    <!-- Footer Section -->
 <footer class="footer-section">
     <div class="widgets-container">
         <div class="widget">
@@ -227,5 +206,7 @@
     
     <p>&copy; 2023 Maisha Yangu Organization Designed by Mywebbworks</p>
 </footer>
+</div>
 </body>
+
 </html>
