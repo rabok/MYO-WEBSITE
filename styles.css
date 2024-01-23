@@ -5,6 +5,7 @@ body {
     color: #fff;
     text-align: justify;
 }
+
 .nav-item:hover .dropdown-menu {
     display: block;
 }
@@ -43,6 +44,19 @@ body {
     float: right; /* Align the button to the right */
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-nav .nav-item {
+        margin-right: 15px; /* Adjust the spacing for smaller screens */
+    }
+
+    .support-button {
+        float: none; /* Remove the float for better positioning on smaller screens */
+        margin-top: 10px; /* Add some space above the button */
+    }
+}
+
+
 /* Resetting some default browser styles */
 body {
     margin: 0;
@@ -68,6 +82,7 @@ body {
     background-color: #EBA340;
     width: 100%;
     height: auto;
+    max-width: 100%; /* Ensure the video doesn't exceed its natural size */
 }
 
 /* Hero text styles */
@@ -95,6 +110,7 @@ body {
     text-decoration: none;
     float: right;
 }
+
 
 /* Updated styles for the impact section */
 .impact-section {
@@ -228,6 +244,44 @@ body {
     text-decoration: none;
 }
 
+/* ... (Your existing styles) ... */
+
+/* Responsive Styles for Impact Section */
+@media (max-width: 768px) {
+    .impact-stats {
+        flex-direction: column; /* Stack statistics vertically on smaller screens */
+    }
+
+    .statistic {
+        margin: 0 10px;
+    }
+}
+
+/* Responsive Styles for Our Programs Section */
+@media (max-width: 768px) {
+    .program-categories {
+        flex-direction: column; /* Stack program categories vertically on smaller screens */
+    }
+
+    .category {
+        width: 100%; /* Make categories span full width on smaller screens */
+    }
+}
+
+/* Responsive Styles for New Row with Three Columns */
+@media (max-width: 768px) {
+    .new-row .col {
+        width: 100%; /* Make columns span full width on smaller screens */
+    }
+}
+
+/* Responsive Styles for Buttons */
+@media (max-width: 768px) {
+    .btn-black {
+        display: block;
+        margin: 10px auto; /* Center the button on smaller screens */
+    }
+}
 
 
 /* Join Us section styles */
