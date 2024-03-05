@@ -63,10 +63,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Container styles to provide equal margins */
 .container {
-    margin-left: auto; /* Center the container on the page */
-    margin-right: auto; /* Center the container on the page */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Set a maximum width for the container */
     width: 100%;
     box-sizing: border-box;
 }
@@ -173,15 +173,16 @@ body {
 /* Section title styles */
 .section-title {
     margin-bottom: 30px;
-    text-align: center;
+    text-align: center !important;
     color: #3D66C9;
 }
+
 
 /* Section paragraph styles */
 .section-paragraph {
     font-size: 16px;
     color: black;
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 30px;
 }
 
@@ -335,6 +336,7 @@ body {
     background-color: #265292; /* Adjust the hover color as needed */
 }
 
+
 /* Success Stories section styles */
 .success-stories-section {
     background-color: transparent; /* Set the background to transparent */
@@ -429,9 +431,8 @@ body {
     width: 100px; /* Adjust the width as needed for consistent size */
     height: auto;
 }
-
-
 /* Our Story Section */
+
 .our-story-section {
     background-color: #FFF; /* Change to white background or your preferred color */
     padding: 20px;
@@ -633,8 +634,10 @@ body {
 .social-icon img {
     width: 30px; /* Adjust the size of the social media icons */
     height: auto;
-    filter: invert(1); /* Invert the color to blue */
+    filter: invert(0); /* Reset the inversion to default (black color) */
+    color: #FFF; /* Set the default color to white */
 }
+
 
 /* Style for the centered section */
 .centered-section {
@@ -754,7 +757,7 @@ body {
 
 /* Core Values Section */
 .core-values-section {
-    background-color: transparent;
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
     padding: 40px 0;
 }
 
@@ -808,6 +811,7 @@ body {
     display: flex; /* Use flexbox for the columns */
     justify-content: center; /* Center-align columns horizontally */
     flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
 }
 
 /* Style for each column with heart shape and paragraph in the Our Core Values section */
@@ -816,6 +820,7 @@ body {
     box-sizing: border-box; /* Include padding in the total width */
     margin-bottom: 20px; /* Add space between rows */
     text-align: center; /* Center-align content within the column */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
 }
 
 /* Style for the paragraphs in the Our Core Values section */
@@ -823,6 +828,7 @@ body {
     margin-bottom: 20px; /* Add space between paragraphs */
     color: #000; /* Set text color to black */
     text-align: center; /* Center-align the text within the column */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
 }
 
 /* Style for the Our Programs section */
@@ -932,7 +938,8 @@ body {
 }
 
 /* Style for the heading in the second column */
-.talents-container .col-md-6 h3 {
+.talents-
+ .col-md-6 h3 {
     color: #d9d9d9; /* Set text color of the heading to #d9d9d9 */
 }
 
@@ -1204,7 +1211,10 @@ i {
     color: #000;
 }
 
-
+/* Add space between the last section and the footer */
+.new-section {
+    margin-bottom: 100px; /* Adjust the margin as needed */
+}
 
 /* Mentor Introduction Section Styles */
 .mentor-intro {
@@ -1243,7 +1253,7 @@ i {
     color: black;
     margin-bottom: 20px;
 }
- 
+
 /*become a partner*/
 
 /* General styling for header */
@@ -1301,6 +1311,8 @@ header h1 {
     color: #000000; /* Set title color to black */
     margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
 }
+
+
 
 /* Styling for the Our Partners section */
 .partners-section {
@@ -1403,12 +1415,15 @@ button[type="submit"] {
     text-align: left;
 }
 
-/* Paragraph in the Our Concept section styles */
+/* Specific selector for paragraphs inside the .our-concept-section */
 .our-concept-section p {
-    text-align: left; /* Align the paragraph to the left */
-    color: #000; /* Text color is black */
-    margin-bottom: 20px; /* Add space below each paragraph */
+    text-align: left;
+    color: #000;
+    margin-bottom: 20px;
 }
+
+
+
 
 /* Concept Section Styles */
 .concept-section {
@@ -1829,6 +1844,7 @@ form button:hover {
 /* New Section Styles */
 .new-section {
     padding: 50px 0;
+    margin-bottom: 20px; /* Adjust the value as needed for the desired space */
 }
 
 /* Section Title Styles */
@@ -1857,6 +1873,12 @@ form button:hover {
     margin-top: 10px;
     text-align: left; /* Align paragraphs to the left */
 }
+
+/* Additional Space for Footer */
+footer {
+    margin-top: 140px; /* Adjust the value as needed for the desired space */
+}
+
 
 /*support us*/
 /* CSS for centering the form and making it full width */
