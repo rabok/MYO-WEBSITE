@@ -1421,20 +1421,19 @@ button[type="submit"] {
     color: #000;
     margin-bottom: 20px;
 }
-
-
-
-
 /* Concept Section Styles */
 .concept-section {
     padding: 50px 0;
+    text-align: center; /* Center the content horizontally */
 }
 
-.section-image {
-    width: 100%; /* Adjust the width if needed */
-    height: auto;
+.rectangle-image {
+    max-width: 100%; /* Set a maximum width for the image */
+    height: auto; /* Let the height adjust automatically based on the width */
     border-radius: 10px; /* Add border-radius for rounded corners */
-    margin-bottom: 20px;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    margin: 20px auto; /* Center the image horizontally and add space between content */
+    display: block; /* Ensure the image is a block element */
 }
 
 .section-paragraph {
@@ -1442,6 +1441,7 @@ button[type="submit"] {
     color: #333;
     margin-bottom: 20px;
 }
+
 
 /* First Section Styles */
 .first-section {
@@ -1864,27 +1864,74 @@ form button:hover {
 .section-subtitle {
     color: black;
     margin-bottom: 10px;
-    text-align: left; /* Align subheadings to the left */
 }
 
 /* Section Paragraph Styles */
+.content-container {
+    text-align: left; /* Align all text within the content container to the left */
+}
+
 .section-paragraph {
     color: black;
     margin-top: 10px;
-    text-align: left; /* Align paragraphs to the left */
 }
 
 /* Additional Space for Footer */
 footer {
-    margin-top: 140px; /* Adjust the value as needed for the desired space */
+    margin-top: 200px; /* Adjust the value as needed for the desired space */
 }
 
 
-/*support us*/
-/* CSS for centering the form and making it full width */
-.form-container {
-    width: 100%;
-    max-width: 1000px; /* Increase the max-width as needed */
+
+/* support us styles */
+form {
+    max-width: 400px;
     margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mpesaBanner {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Custom CSS for the Third Section */
+.third-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #3D66C9;
+    text-align: center; /* Center the title */
+}
+
+.third-section .donate-button {
+    background-color: #3D66C9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: auto; /* Center the button */
 }
 

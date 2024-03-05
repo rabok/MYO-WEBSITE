@@ -14,7 +14,6 @@
 
     <!-- Link to your separate styles.css file -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="volunteer.css">
 </head>
 
 <body>
@@ -88,71 +87,125 @@
             </div>
         </div>
     </nav>
-     
-            <!-- All content wrapped in a container -->
-            <div class="container">
-            
-<!-- New Section with Two Columns -->
-<section>
-    <div class="column form-container">
-        <!-- Your form goes here -->
-        <form action="#" method="post">
-            <h2>Support Us</h2>
-            <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Support Us</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Make sure to link to your actual CSS file -->
+    </head>
+    <!-- All content wrapped in a container -->
+    <div class="container">
+       <!-- First Section -->
+<section class="first-section">
+    <div class="container">
+        <div class="row">
+            <!-- First Column - Donate Form -->
+            <div class="col-lg-6">
+                <!-- Your donation form goes here -->
+                <form action="process_donation.php" method="post" class="donation-form">
+                    <div class="form-header">
+                        <strong>Donate Now!</strong>
+                        <br>
+                        <br>
+                        <strong>Empowering lives, one child at a time.</strong>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select a Campaign:</p>
+                        <div class="select-campaign">
+                            <select name="campaign" id="campaign">
+                                <option value="campaign1">Education</option>
+                                <option value="campaign2">Personality</option>
+                                <option value="campaign3">Talents</option>
+                                <option value="campaign3">Community</option>
+                                <option value="campaign3">Uji Campaign</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select or enter an amount:</p>
+                        <div class="amount-options">
+                            <input type="text" name="customAmount" placeholder="Enter custom amount">
+                            <div class="preset-amounts">
+                                <label>
+                                    <input type="radio" name="amount" value="500"> $500
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="750"> $750
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1000"> $1000
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1500"> $1500
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select Donation Frequency:</p>
+                        <div class="select-frequency">
+                            <label>
+                                <input type="radio" name="frequency" value="one-time" checked> One Time
+                            </label>
+                            <label>
+                                <input type="radio" name="frequency" value="recurring"> Recurring
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Add more form fields as needed -->
+
+                    <input type="submit" value="Give">
+                </form>
             </div>
 
-            <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+             <!-- Second Column - Text Paragraph -->
+             <div class="col-lg-6">
+                <img id="mpesaBanner" src="assets/images/mpesa.png" alt="M-Pesa Banner">
+
+                <h2>M-Pesa Paybill Payment</h2>
+                <p>Please fill in the details below to make a payment.</p>
+
+                <form id="mpesaForm">
+                    <label for="paybillNumber">Paybill Number:</label>
+                    <input type="text" id="paybillNumber" name="paybillNumber" value="522522" readonly>
+
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" name="accountNumber" value="5910291" readonly>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+
+                    <button type="button" onclick="makeMpesaPayment()">Donate Now</button>
+                </form>
+
+                <script src="script.js"></script> <!-- Link to your JavaScript file -->
             </div>
-
-            <div class="form-group">
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" placeholder="Enter your city" required>
-            </div>
-
-            <div class="form-group">
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country" placeholder="Enter your country" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-
-            <div class="form-group">
-                <label>What opportunities are you interested in?</label>
-                <div class="opportunities">
-                    <input type="radio" id="volunteer" name="opportunity" value="volunteer">
-                    <label for="volunteer">Volunteer</label>
-
-                    <input type="radio" id="mentor" name="opportunity" value="mentor">
-                    <label for="mentor">Mentor</label>
-
-                    <input type="radio" id="distantParent" name="opportunity" value="distantParent">
-                    <label for="distantParent">Distant Parent</label>
-
-                    <input type="radio" id="internship" name="opportunity" value="internship">
-                    <label for="internship">Internship</label>
-
-                    <input type="radio" id="partner" name="opportunity" value="partner">
-                    <label for="partner">Partner with Us</label>
+        </div>
+    </div>
+</section>
+<!-- Third Section -->
+<section class="third-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center"> <!-- Added 'text-center' class to center the content -->
+                <!-- Title with primary color -->
+                <h2>Make a Tax-Deductible donation here!</h2>
+                
+                <!-- Donate Now Button centered with a link -->
+                <div class="btn-donate-container mt-3">
+                    <a href="https://newhorizonsfoundation.com/project/single-project/2734/" class="btn btn-primary btn-donate">Donate Now</a>
                 </div>
             </div>
-            <input type="submit" value="Submit">
-        </form>
+        </div>
     </div>
 </section>
 
-                    <!-- Footer Section -->
+</section>
+<!-- Footer Section -->
 <footer class="footer-section">
     <div class="widgets-container">
         <div class="widget">
@@ -187,7 +240,7 @@
         </div>
 
         <div class="widget">
-            <h3>Keep Up with the Latest News from Maisha Yangu!</h3>
+            <h5>Keep Up with the Latest News from Maisha Yangu!</h5>
             <div class="news-bar">
                 <input type="text" placeholder="Enter your email">
                 <button>Subscribe</button>
@@ -204,7 +257,8 @@
         </div>
     </div>
     
-    <p>&copy; 2023 Maisha Yangu Organization Designed by Mywebbworks</p>
+    <p>&copy; 2024 Maisha Yangu Organization. Designed by <a href="https://www.mywebbworks.com" target="_blank">Mywebbworks</a></p>
+
 </footer>
 </div>
 </body>
