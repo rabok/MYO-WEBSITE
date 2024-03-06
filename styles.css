@@ -687,6 +687,7 @@ body {
     color: #000; /* Set the text color to black */
 }
 
+
 /* Responsive Styles for Footer Section */
 @media (max-width: 768px) {
     /* Adjust the width for each widget to span full width on smaller screens */
