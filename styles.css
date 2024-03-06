@@ -4,7 +4,11 @@ body {
     background-color: transparent;
     color: #fff;
     text-align: justify;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 .nav-item:hover .dropdown-menu {
     display: block;
@@ -71,7 +75,6 @@ body {
     box-sizing: border-box;
 }
 
-
 /* Hero section styles */
 .hero {
     padding: 50px 0;
@@ -110,7 +113,6 @@ body {
     text-decoration: none;
     float: right;
 }
-
 
 /* Updated styles for the impact section */
 .impact-section {
@@ -177,7 +179,6 @@ body {
     color: #3D66C9;
 }
 
-
 /* Section paragraph styles */
 .section-paragraph {
     font-size: 16px;
@@ -185,7 +186,6 @@ body {
     text-align: center !important;
     margin-bottom: 30px;
 }
-
 
 /* Program categories styles */
 .program-categories {
@@ -245,8 +245,6 @@ body {
     text-decoration: none;
 }
 
-/* ... (Your existing styles) ... */
-
 /* Responsive Styles for Impact Section */
 @media (max-width: 768px) {
     .impact-stats {
@@ -266,6 +264,19 @@ body {
 
     .category {
         width: 100%; /* Make categories span full width on smaller screens */
+        margin-bottom: 20px; /* Add space between categories */
+    }
+
+    /* Ensure each paragraph appears below its corresponding image */
+    .new-row .col {
+        width: 100%; /* Make columns span full width on smaller screens */
+        text-align: center; /* Center the text below the image */
+        margin-bottom: 20px; /* Add space between paragraphs */
+    }
+
+    /* Ensure each column and its content appears below the other */
+    .new-row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
     }
 }
 
@@ -281,6 +292,41 @@ body {
     .btn-black {
         display: block;
         margin: 10px auto; /* Center the button on smaller screens */
+    }
+}
+/* Responsive Styles for Success Stories Section */
+@media (max-width: 768px) {
+    /* Container of the two columns styles */
+    .success-stories-content {
+        flex-direction: column-reverse; /* Reverse the order for smaller screens */
+    }
+
+    /* Column with circular-framed image styles */
+    .image-column {
+        order: 1; /* Move the image column to the bottom */
+        flex: 0 0 100%; /* Make the image column span full width */
+    }
+
+    /* Column with three paragraphs and a button styles */
+    .text-column {
+        order: 0; /* Keep the text column at the top */
+        flex: 0 0 100%; /* Make the text column span full width */
+        text-align: center; /* Center the text in the text column */
+    }
+}
+/* Responsive Styles for Our Partners Section */
+@media (max-width: 768px) {
+    /* Partners container styles */
+    .partners-container {
+        flex-wrap: wrap; /* Allow partners to wrap onto the next line on smaller screens */
+        justify-content: center; /* Center the partners horizontally */
+    }
+
+    /* Partner logo styles */
+    .partner-logo {
+        width: 50%; /* Adjust the width as needed for smaller screens */
+        max-width: 100%; /* Ensure the logos don't exceed their natural size */
+        margin-bottom: 20px; /* Add space between partner logos */
     }
 }
 
@@ -403,8 +449,6 @@ body {
     display: inline-block;
 }
 
-
-
 /* Partners section styles */
 .partners-section {
     background-color: transparent;
@@ -431,6 +475,7 @@ body {
     width: 100px; /* Adjust the width as needed for consistent size */
     height: auto;
 }
+
 /* Our Story Section */
 
 .our-story-section {
@@ -637,8 +682,55 @@ body {
     filter: invert(0); /* Reset the inversion to default (black color) */
     color: #FFF; /* Set the default color to white */
 }
+/* Style for the copyright text */
+.copyright-text {
+    color: #000; /* Set the text color to black */
+}
 
+/* Responsive Styles for Footer Section */
+@media (max-width: 768px) {
+    /* Adjust the width for each widget to span full width on smaller screens */
+    .widget {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between widgets */
+    }
 
+    /* Center align the text in the news bar on smaller screens */
+    .news-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the width of the input in the news bar on smaller screens */
+    .news-bar input {
+        width: 100%;
+        margin-bottom: 10px; /* Add space between input and button */
+    }
+
+    /* Center align the subscribe button in the news bar on smaller screens */
+    .news-bar button {
+        width: 100%;
+    }
+
+    /* Add space above and below the social media icons on smaller screens */
+    .social-icons {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust social media icon styles for smaller screens */
+    .social-icon {
+        margin: 10px; /* Add spacing between social icons */
+    }
+
+    /* Adjust the size of the social media icon images on smaller screens */
+    .social-icon img {
+        width: 25px; /* Adjust the size of the social media icons */
+        height: auto;
+    }
+}
+
+/* Our vision and values*/
 /* Style for the centered section */
 .centered-section {
     text-align: center; /* Center-align the content within the section */
