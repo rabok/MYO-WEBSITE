@@ -1544,6 +1544,32 @@ button[type="submit"] {
     color: #333;
     margin-bottom: 20px;
 }
+<style>
+/* Additional Paragraph Style */
+.section-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Row and Column Styles */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust margin as needed to add space between columns */
+}
+
+.image-column {
+    flex: 1;
+    padding: 10px; /* Adjust padding as needed to add space between columns */
+}
+
+/* Image Styles */
+.image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
 
 
 /* First Section Styles */
