@@ -1545,31 +1545,59 @@ button[type="submit"] {
     margin-bottom: 20px;
 }
 <style>
-/* Additional Paragraph Style */
-.section-paragraph {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
+    /* Additional Paragraph Style */
+    .section-paragraph {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: black; /* Set text color to black */
+    }
 
-/* Row and Column Styles */
-.image-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px; /* Adjust margin as needed to add space between columns */
-}
+    /* Row and Column Styles */
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px; /* Adjust margin as needed to add space between columns */
+    }
 
-.image-column {
-    flex: 1;
-    padding: 10px; /* Adjust padding as needed to add space between columns */
-}
+    .image-column {
+        flex: 1;
+        padding: 10px; /* Adjust padding as needed to add space between columns */
+        text-align: center; /* Center the text within the column */
+    }
 
-/* Image Styles */
-.image-column img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    /* Image Styles */
+    .image-column img {
+        width: 100px; /* Set width to 100px */
+        height: 100px; /* Set height to 100px */
+        display: block;
+        background-color: #A5C98E; /* Default background color for all images */
+    }
+
+    /* Text Styles */
+    .image-column p {
+        color: black; /* Set text color to black */
+    }
+
+    /* Background colors for specific images */
+    .image-column:nth-child(-n+3) img {
+        background-color: #A5C98E; /* Background color for the first three images in each row */
+    }
+
+    .image-column:nth-child(n+4) img {
+        background-color: #ee9c64; /* Background color for the last three images in the first row */
+    }
+
+    .image-row:nth-child(2) .image-column:nth-child(-n+3) img {
+        background-color: #A4C5E3; /* Background color for the first three images in the second row */
+    }
+
+    .image-row:nth-child(2) .image-column:nth-child(n+4) img {
+        background-color: #5b5b5b; /* Background color for the last three images in the second row */
+    }
 </style>
+
+
+
 
 
 /* First Section Styles */
