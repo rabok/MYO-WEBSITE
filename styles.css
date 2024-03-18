@@ -477,39 +477,38 @@ body {
 }
 
 /* Our Story Section */
-
 .our-story-section {
-    background-color: #FFF; /* Change to white background or your preferred color */
+    background-color: #FFF;
     padding: 20px;
-    color: #3D66C9; /* Text color is primary */
+    color: #3D66C9;
     text-align: center;
 }
 
 .our-story-section h1 {
-    font-size: 36px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add space below the title */
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 /* Two Columns in One Row */
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center content vertically */
-    margin-bottom: 20px; /* Add space between rows */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 /* Image and Text Columns */
 .column {
-    flex: 0 0 48%; /* Adjust the size of both image and text columns */
-    margin-bottom: 10px; /* Add space between columns */
-    text-align: left; /* Left-align text in both columns */
+    flex: 0 0 48%;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 /* Style for the image in the column */
 .column img {
     width: 100%;
-    max-height: 220px; /* Set a maximum height as needed */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    max-height: 220px;
+    object-fit: cover;
 }
 
 /* Style for the text in the column */
@@ -525,6 +524,26 @@ body {
     margin-bottom: 20px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Change flex-direction to column */
+    }
+
+    .column {
+        flex: 1; /* Set both columns to take up full width */
+        width: 100%; /* Set width to 100% */
+    }
+
+    /* Add margin between paragraph and button */
+    .additional-paragraph {
+        margin-bottom: 10px !important; /* Add margin to the bottom of the paragraph */
+    }
+
+    .primary-btn {
+        margin-top: 10px; /* Add margin to the top of the button */
+    }
+}
 
 /* Style for the Our Team button */
 .our-team-button {
