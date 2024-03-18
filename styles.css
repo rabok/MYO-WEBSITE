@@ -1100,10 +1100,10 @@ body {
     }
 }
 
-/* Style for the Mentorship Program section */
+/* Style for Mentorship Program section */
 .mentorship-section {
     text-align: center; /* Align the content at the center */
-    color: #3D66C9; /* Text color is primary */
+    color: #3D66C9; /* Text color for titles */
     padding: 20px; /* Add padding as needed */
 }
 
@@ -1113,11 +1113,12 @@ body {
     text-align: left; /* Align paragraphs to the left */
 }
 
-/* Style for rows and columns in Mentorship Program section */
+/* Style for rows in Mentorship Program section */
 .mentorship-section .row {
     margin-bottom: 20px; /* Add space between rows */
 }
 
+/* Style for columns in Mentorship Program section */
 .mentorship-section .col-md-6 {
     width: 50%; /* Set width of columns to 50% for two columns in each row */
     float: left; /* Float the columns left for side-by-side placement */
@@ -1137,7 +1138,7 @@ body {
 }
 
 /* Style for the New Section */
-.new-section {
+.new-container {
     background-color: transparent; /* Set background color to transparent */
     padding: 20px; /* Add padding as needed */
     color: #000; /* Text color is black */
@@ -1147,7 +1148,6 @@ body {
     flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center items horizontally and vertically */
 }
-
 
 /* Style for the centered paragraph */
 .centered-paragraph {
@@ -1164,6 +1164,7 @@ body {
     display: inline-block; /* Make the button an inline-block element */
     margin-top: 10px; /* Add space above the button */
 }
+
 
 /* Style for the images in the Education, Personality, Talents, and Community sections */
 .education-container img,
