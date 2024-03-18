@@ -537,13 +537,14 @@ body {
 
     /* Add margin between paragraph and button */
     .additional-paragraph {
-        margin-bottom: 10px !important; /* Add margin to the bottom of the paragraph */
+        margin-bottom: 10px; /* Add margin to the bottom of the paragraph */
     }
 
     .primary-btn {
         margin-top: 10px; /* Add margin to the top of the button */
     }
 }
+
 
 /* Style for the Our Team button */
 .our-team-button {
@@ -2018,6 +2019,8 @@ form h2 {
 /* Form Styles */
 form {
     width: 100%; /* Make the form take 100% width of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px; /* Add padding to the form */
 }
 
 /* Form Group Styles */
@@ -2025,73 +2028,43 @@ form {
     width: 100%; /* Make each form group take 100% width of the form */
     box-sizing: border-box; /* Include padding and border in the width */
     margin-bottom: 15px;
+    overflow: auto; /* Ensure content doesn't overflow */
 }
 
 /* Label Styles */
 .form-group label {
-    display: block;
+    display: inline-block; /* Display labels inline */
+    width: 30%; /* Adjust the width of labels */
     margin-bottom: 5px;
 }
 
 /* Input Styles */
 .form-group input {
-    width: 100%; /* Make the input fields take 100% width of the form group */
+    width: calc(70% - 10px); /* Adjust the width of input fields */
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
+    float: right; /* Float inputs to the right */
+    margin-left: 10px; /* Add margin between label and input */
 }
 
-
-/* Name Fields Styles */
-form .name-fields {
-    display: flex;
-    justify-content: space-between;
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust widths for smaller screens */
+    .form-group label {
+        width: 100%; /* Labels take full width */
+        margin-bottom: 10px; /* Increase margin bottom for labels */
+    }
+    
+    .form-group input {
+        width: calc(100% - 10px); /* Input fields take full width */
+        margin-left: 0; /* Remove left margin for inputs */
+        float: none; /* Reset float property */
+        margin-top: 5px; /* Add margin between inputs */
+    }
 }
 
-/* City and Country Fields Styles */
-form .location-fields {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Button Container Styles */
-.button-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    justify-content: center; /* Center buttons horizontally */
-}
-
-/* Button Styles */
-form button {
-    background-color: #3D66C9; /* Primary color background */
-    color: #fff; /* Text color */
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px; /* Adjust spacing between buttons */
-}
-
-/* Button Hover Styles */
-form button:hover {
-    background-color: #295896; /* Darker shade for hover effect */
-}
-/* Opportunities Styles */
-.opportunities {
-    display: flex;
-}
-
-/* Radio Button Styles */
-.opportunities input[type="radio"] {
-    margin-right: 5px; /* Adjust spacing between radio buttons and labels */
-}
-
-/* Label Styles */
-.opportunities label {
-    display: inline-block;
-    margin-right: 15px; /* Adjust spacing between labels */
-}
 /* New Section Styles */
 .new-section {
     padding: 50px 0;
