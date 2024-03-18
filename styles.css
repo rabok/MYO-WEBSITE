@@ -1525,6 +1525,7 @@ button[type="submit"] {
     color: #000;
     margin-bottom: 20px;
 }
+
 /* Concept Section Styles */
 .concept-section {
     padding: 50px 0;
@@ -1545,61 +1546,133 @@ button[type="submit"] {
     color: #333;
     margin-bottom: 20px;
 }
-<style>
-    /* Additional Paragraph Style */
-    .section-paragraph {
-        font-size: 16px;
-        margin-bottom: 20px;
-        color: black; /* Set text color to black */
-    }
 
-    /* Row and Column Styles */
-    .image-row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -10px; /* Adjust margin as needed to add space between columns */
-    }
+/* Row with three columns */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
-    .image-column {
-        flex: 1;
-        padding: 10px; /* Adjust padding as needed to add space between columns */
-        text-align: center; /* Center the text within the column */
-    }
+/* Individual column */
+.col {
+    flex: 1; /* Distribute space evenly among columns */
+    text-align: center; /* Center content horizontally */
+}
 
-    /* Image Styles */
-    .image-column img {
-        width: 100px; /* Set width to 100px */
-        height: 100px; /* Set height to 100px */
-        display: block;
-        background-color: #A5C98E; /* Default background color for all images */
-    }
+/* Container for round icons */
+.icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the container round */
+    overflow: hidden; /* Ensure the image stays within the rounded container */
+    display: flex;
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    background-color: #5b5b5b; /* Background color of the container */
+}
 
-    /* Text Styles */
-    .image-column p {
-        color: black; /* Set text color to black */
-    }
+/* Adjustments for icon images */
+.icon-container img {
+    width: 60%; /* Make the image fill most of the container */
+    height: auto; /* Maintain aspect ratio */
+}
 
-    /* Background colors for specific images */
-    .image-column:nth-child(-n+3) img {
-        background-color: #A5C98E; /* Background color for the first three images in each row */
-    }
+/* Style for icon text */
+.icon-text {
+    color: #000; /* Text color black */
+    text-align: center;
+    margin-top: 10px; /* Add space between icon and text */
+}
 
-    .image-column:nth-child(n+4) img {
-        background-color: #ee9c64; /* Background color for the last three images in the first row */
-    }
+/* Specific selector for paragraphs inside the .concept-section */
+.concept-section p {
+    text-align: center; /* Center paragraphs */
+    color: #000; /* Set text color */
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
 
-        /* Background colors for specific columns in the second row */
-    .image-row:nth-child(2) .image-column:nth-child(-n+3) {
-        background-color: #A4C5E3; /* Background color for the first three columns in the second row */
-    }
+/* Additional Paragraph Style */
+.section-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black; /* Set text color to black */
+}
 
-    .image-row:nth-child(2) .image-column:nth-child(n+4) {
-        background-color: #5b5b5b; /* Background color for the last three columns in the second row */
-    }
-</style>
+/* Row and Column Styles */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust margin as needed to add space between columns */
+}
 
+.image-column {
+    flex: 1;
+    padding: 10px; /* Adjust padding as needed to add space between columns */
+    text-align: center; /* Center the text within the column */
+}
 
+/* Image Styles */
+.image-column img {
+    width: 100px; /* Set width to 100px */
+    height: 100px; /* Set height to 100px */
+    display: block;
+}
 
+/* Text Styles */
+.image-column p {
+    color: black; /* Set text color to black */
+}
+
+/* First Row Image Background Colors */
+.image-row:first-of-type .image-column:nth-child(1) img {
+    background-color: #A5C98E; /* Background color for image 1 */
+}
+
+.image-row:first-of-type .image-column:nth-child(2) img {
+    background-color: #A5C98E; /* Background color for image 2 */
+}
+
+.image-row:first-of-type .image-column:nth-child(3) img {
+    background-color: #A5C98E; /* Background color for image 3 */
+}
+
+.image-row:first-of-type .image-column:nth-child(4) img {
+    background-color: #ee9c64; /* Background color for image 4 */
+}
+
+.image-row:first-of-type .image-column:nth-child(5) img {
+    background-color: #ee9c64; /* Background color for image 5 */
+}
+
+.image-row:first-of-type .image-column:nth-child(6) img {
+    background-color: #ee9c64; /* Background color for image 6 */
+}
+
+/* Second Row Image Background Colors */
+.image-row:nth-of-type(2) .image-column:nth-child(1) img {
+    background-color: #A4C5E3; /* Background color for image 7 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(2) img {
+    background-color: #A4C5E3; /* Background color for image 8 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(3) img {
+    background-color: #A4C5E3; /* Background color for image 9 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(4) img {
+    background-color: #5b5b5b; /* Background color for image 10 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(5) img {
+    background-color: #5b5b5b; /* Background color for image 11 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(6) img {
+    background-color: #5b5b5b; /* Background color for image 12 */
+}
 
 
 /* First Section Styles */
