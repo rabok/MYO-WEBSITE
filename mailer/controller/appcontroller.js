@@ -11,9 +11,9 @@ const signup = async (req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        host: "mail.maishayangu.org",
+        port: 465,
+        secure: true, // true for 465, false for other ports
         auth: {
             user: testAccount.user, // generated ethereal user
             pass: testAccount.pass, // generated ethereal password
@@ -21,7 +21,7 @@ const signup = async (req, res) => {
     });
 
     let message = {
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
+        from: '"Fred Foo 👻" <foo@example.com>', // sender address (replace with your valid sender email address)
         to: "bar@example.com, baz@example.com", // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Successfully Register with us.", // plain text body
@@ -44,18 +44,17 @@ const signup = async (req, res) => {
 
 /** send mail from real gmail account */
 const getbill = (req, res) => {
-
     const { userEmail } = req.body;
 
-    let config = {
-        service: 'gmail',
+    let transporter = nodemailer.createTransport({
+        host: "mail.maishayangu.org",
+        port: 465,
+        secure: true, // true for 465, false for other ports
         auth: {
             user: EMAIL,
             pass: PASSWORD
-        }
-    }
-
-    let transporter = nodemailer.createTransport(config);
+        },
+    });
 
     let MailGenerator = new Mailgen({
         theme: "default",
@@ -98,8 +97,6 @@ const getbill = (req, res) => {
     }).catch(error => {
         return res.status(500).json({ error })
     })
-
-    // res.status(201).json("getBill Successfully...!");
 }
 
 module.exports = {

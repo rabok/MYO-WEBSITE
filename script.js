@@ -12,3 +12,34 @@ function makeMpesaPayment() {
     // This is a placeholder, replace with actual API call to Safaricom Daraja API
     alert(`Initiate payment with Paybill: ${paybillNumber}, Account: ${accountNumber}, Amount: ${amount}`);
 }
+
+const btn = document.querySelector("#btn-submit")
+const email = document.querySelector("#email");
+
+
+btn.addEventListener("click", (e) =>  {
+    e.preventDefault();
+    //validate the input field
+    if(this.email.value == null || this.email.value == ""){
+        alert("Please enter your email address!");
+        return false;
+    
+    } else {
+        let fdata = {
+            method: "POST",
+            body: JSON.stringify({
+                email: this.email.value,
+            }),
+            headers: ({"Content-Type": "application/json"}),
+        }
+        fetch("/subscribe", fdata)
+        .then((response) => {
+            if(response.ok){
+                console.log("Email sent successfully.");
+            }else {
+                throw new Error("Error!");
+            }
+
+        })
+    }
+})
