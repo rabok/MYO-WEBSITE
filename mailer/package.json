@@ -55,6 +55,7 @@
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
     "lru-cache": "^6.0.0",
+    "mailchimp-api-v3": "^1.15.0",
     "mailgen": "^2.0.28",
     "media-typer": "^0.3.0",
     "merge-descriptors": "^1.0.1",
