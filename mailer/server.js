@@ -1,23 +1,41 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
+const Mailchimp = require('mailchimp-api-v3');
 const appRoute = require('./routes/route.js');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(express.json());
-app.use(cors()); // Add this line to enable CORS for all routes
+const mailchimp = new Mailchimp({
+    apiKey: process.env.MAILCHIMP_API_KEY
+});
 
-/** routes */
+// Middleware setup
+app.use(express.json());
+app.use(cors());
+
+// Routes
 app.use('/api', appRoute);
 
-// Route to handle subscription requests
+// Subscription route
 app.post('/subscribe', (req, res) => {
     const { email } = req.body;
-    // Here you can add your logic to handle the subscription
-    console.log('Received subscription request for email:', email);
-    // For now, let's just send a simple response
-    res.status(200).send('Subscription successful');
+    
+    // Add subscriber to Mailchimp audience list
+    mailchimp.post(`/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`, {
+        email_address: email,
+        status: 'subscribed'
+    })
+    .then(() => {
+        console.log('Subscription successful');
+        res.status(200).send('Thank you for subscribing!');
+    })
+    .catch((err) => {
+        console.error('Error subscribing to Mailchimp:', err);
+        res.status(500).send('Error subscribing to newsletter');
+    });
 });
 
 app.listen(PORT, () => {

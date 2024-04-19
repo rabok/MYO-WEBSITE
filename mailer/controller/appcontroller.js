@@ -1,105 +1,30 @@
-const nodemailer = require('nodemailer');
-const Mailgen = require('mailgen');
+const Mailchimp = require('mailchimp-api-v3');
 
-const { EMAIL, PASSWORD } = require('../env'); // Removed '.js' from import
+require('dotenv').config();
 
-/** send mail from testing account */
-const signup = async (req, res) => {
+const mailchimp = new Mailchimp({
+    apiKey: process.env.MAILCHIMP_API_KEY // Use environment variable for API key
+});
 
-    /** testing account */
-    let testAccount = await nodemailer.createTestAccount();
-
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: "mail.maishayangu.org",
-        port: 465,
-        secure: true, // true for 465, false for other ports
-        auth: {
-            user: testAccount.user, // generated ethereal user
-            pass: testAccount.pass, // generated ethereal password
-        },
+/** Handle subscription requests */
+const subscribe = (req, res) => {
+    const { email } = req.body;
+    
+    // Add subscriber to Mailchimp audience list
+    mailchimp.post(`/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`, {
+        email_address: email,
+        status: 'subscribed'
+    })
+    .then(() => {
+        console.log('Subscription successful');
+        res.status(200).json({ message: 'Thank you for subscribing!' });
+    })
+    .catch((err) => {
+        console.error('Error subscribing to Mailchimp:', err);
+        res.status(500).json({ error: 'Error subscribing to newsletter' });
     });
-
-    let message = {
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address (replace with your valid sender email address)
-        to: "bar@example.com, baz@example.com", // list of receivers
-        subject: "Hello ✔", // Subject line
-        text: "Successfully Register with us.", // plain text body
-        html: "<b>Successfully Register with us.</b>", // html body
-    }
-
-    transporter.sendMail(message).then((info) => {
-        return res.status(201)
-            .json({
-                msg: "you should receive an email",
-                info: info.messageId,
-                preview: nodemailer.getTestMessageUrl(info)
-            })
-    }).catch(error => {
-        return res.status(500).json({ error })
-    })
-
-    // res.status(201).json("Signup Successfully...!");
-}
-
-/** send mail from real gmail account */
-const getbill = (req, res) => {
-    const { userEmail } = req.body;
-
-    let transporter = nodemailer.createTransport({
-        host: "mail.maishayangu.org",
-        port: 465,
-        secure: true, // true for 465, false for other ports
-        auth: {
-            user: EMAIL,
-            pass: PASSWORD
-        },
-    });
-
-    let MailGenerator = new Mailgen({
-        theme: "default",
-        product: {
-            name: "Mailgen",
-            link: 'https://mailgen.js/'
-        }
-    })
-
-    let response = {
-        body: {
-            name: "Daily Tuition",
-            intro: "Your bill has arrived!",
-            table: {
-                data: [
-                    {
-                        item: "Nodemailer Stack Book",
-                        description: "A Backend application",
-                        price: "$10.99",
-                    }
-                ]
-            },
-            outro: "Looking forward to do more business"
-        }
-    }
-
-    let mail = MailGenerator.generate(response)
-
-    let message = {
-        from: EMAIL,
-        to: userEmail,
-        subject: "Place Order",
-        html: mail
-    }
-
-    transporter.sendMail(message).then(() => {
-        return res.status(201).json({
-            msg: "you should receive an email"
-        })
-    }).catch(error => {
-        return res.status(500).json({ error })
-    })
 }
 
 module.exports = {
-    signup,
-    getbill
-}
+    subscribe
+};
