@@ -17,6 +17,8 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <!-- Mailchimp code -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ace737a28a7633dda8b63b8a7/0bb484b401c41d048a2a0fc07.js");</script>
 </head>
 
 
@@ -163,6 +165,8 @@
 </p>
 
 </section>
+
+
 <!-- Footer Section -->
 <footer class="footer-section">
     <div class="widgets-container">
@@ -193,33 +197,68 @@
         <div class="widget">
             <h3>Get in Touch!</h3>
             <p>Email: info@maishayangu.org</p>
-            <p>Phone:  +254 768 282 724</p>
-            <p><Address>: Mti mmoja, Kawangware</Address></p>
+            <p>Phone: +254 768 282 724</p>
+            <p>Address: Mti mmoja, Kawangware</p>
         </div>
 
         <div class="widget">
             <h3>Keep Up with the Latest News from Maisha Yangu!</h3>
             <div class="news-bar">
-                <input type="text" id="emailInput" name="email" placeholder="Enter your email">
-                <button>Subscribe</button>
+                <!-- Newsletter signup form -->
+                <form id="signupForm">
+                    <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
-        
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-                <a href="#" class="social-icon"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
-                <a href="#" class="social-icon"><img src="assets/images/twitter.png" alt="Twitter"></a>
-                <a href="#" class="social-icon"><img src="assets/images/instagram.png" alt="Instagram"></a>
-                <a href="#" class="social-icon"><img src="assets/images/facebook.png" alt="Facebook"></a>
-                <a href="#" class="social-icon"><img src="assets/images/youtube.png" alt="YouTube"></a>
-            </div>
-        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="assets/images/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="assets/images/youtube.png" alt="YouTube"></a>
         </div>
     </div>
-    
-    <p class="copyright-text">&copy; 2023 <a href="https://www.maishayangu.org" target="_blank">Maisha Yangu Organization</a> Designed by <a href="https://www.mywebbworks.com" target="_blank">Mywebbworks</a></p>
+</footer>
 
+<!-- JavaScript for handling form submission -->
+<script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
+        // Get the email input value
+        var email = document.getElementById('emailInput').value;
+
+        // Call Mailchimp API to add the subscriber
+        fetch('/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email }) // Send email data in JSON format
+        })
+        .then(response => {
+            // Check if the response is successful
+            if (response.ok) {
+                return response.json(); // Parse the JSON response
+            } else {
+                throw new Error('Failed to subscribe'); // Throw an error if the response is not successful
+            }
+        })
+        .then(data => {
+            console.log(data); // Log success message
+            alert('Thank you for subscribing!'); // Show success message to the user
+        })
+        .catch(error => {
+            console.error(error); // Log any errors
+            alert('Failed to subscribe. Please try again later.'); // Show error message to the user
+        });
+    });
+</script>
+
+<p class="copyright-text">&copy; 2023 <a href="https://www.maishayangu.org" target="_blank">Maisha Yangu Organization</a> Designed by <a href="https://www.mywebbworks.com" target="_blank">Mywebbworks</a></p>
 </footer>
 </body>
 

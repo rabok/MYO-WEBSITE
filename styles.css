@@ -660,29 +660,39 @@ body {
     margin-bottom: 20px; /* Add space between widgets */
 }
 
-/* Style for the news bar */
-.news-bar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px; /* Add space above the bar */
+/* Style for the input in the news bar */
+.news-bar input[type="email"] {
+    width: calc(80% - 10px); /* Adjusted width to accommodate padding */
+    padding: 10px; /* Increase padding for better spacing */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Set a semi-transparent background */
+    color: #000; /* Set text color to black */
 }
 
-/* Style for the input in the news bar */
-.news-bar input {
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
+/* Adjust placeholder color */
+.news-bar input[type="email"]::placeholder {
+    color: #FFF; /* Set the placeholder text color to white */
+    opacity: 0.7; /* Adjust opacity for better visibility */
 }
 
 /* Style for the subscribe button in the news bar */
 .news-bar button {
-    background-color: #EBA340;
-    color: #FFF;
-    padding: 8px 15px;
+    background-color: #EBA340 !important; /* Set the background color to #EBA340 */
+    color: #FFF !important; /* Set text color to white */
+    padding: 10px 20px; /* Adjust padding for better appearance */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/* Hover effect for the subscribe button */
+.news-bar button:hover {
+    background-color: #D48C22; /* Adjust color on hover */
+}
+
 
 /* Style for social media icons */
 .social-icons {
@@ -723,15 +733,17 @@ body {
     }
 
     /* Adjust the width of the input in the news bar on smaller screens */
+@media (max-width: 768px) {
     .news-bar input {
-        width: 100%;
+        width: 100%; /* Make input span full width on smaller screens */
         margin-bottom: 10px; /* Add space between input and button */
     }
 
     /* Center align the subscribe button in the news bar on smaller screens */
     .news-bar button {
-        width: 100%;
+        width: 100%; /* Make button span full width on smaller screens */
     }
+}
 
     /* Add space above and below the social media icons on smaller screens */
     .social-icons {
